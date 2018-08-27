@@ -1,0 +1,2 @@
+ERROR 23:02:31,965 - Pogresan tip parametra kod argumenta Parameter: ocekuje se tip rs.etf.pp1.symboltable.concepts.Struct@76fb509a, a ne rs.etf.pp1.symboltable.concepts.Struct@300ffa5d na liniji 49
+ERROR 23:02:31,968 - Parsiranje NIJE uspesno zavrseno!

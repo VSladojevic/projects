@@ -1,0 +1,13 @@
+program Test2
+
+
+{
+
+void main() int x,y; bool t; {
+	
+	print('a',7);
+
+}
+
+
+}

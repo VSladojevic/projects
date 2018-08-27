@@ -1,0 +1,5 @@
+ERROR 19:35:19,432 - Sintaksna greska na liniji 16
+ERROR 19:35:19,437 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 16
+ERROR 19:35:19,476 - Promenljiva x nije prethodno definsana na liniji 16
+ERROR 19:35:19,476 - noObj nije niz na liniji 16
+ERROR 19:35:19,480 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,5 @@
+ERROR 19:28:39,365 - x nije niz na liniji 15
+ERROR 19:28:39,367 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 15
+ERROR 19:28:39,367 - x nije niz na liniji 16
+ERROR 19:28:39,367 - Print moze primati samo int, char i bool tipove na liniji 16
+ERROR 19:28:39,371 - Parsiranje NIJE uspesno zavrseno!

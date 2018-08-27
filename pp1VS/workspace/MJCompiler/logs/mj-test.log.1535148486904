@@ -1,0 +1,4 @@
+ERROR 00:07:41,482 - Sintaksna greska na liniji 17
+ERROR 00:07:41,486 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 26
+ERROR 00:07:41,501 - Promenljiva y nije prethodno definsana na liniji 17
+ERROR 00:07:41,503 - Parsiranje NIJE uspesno zavrseno!

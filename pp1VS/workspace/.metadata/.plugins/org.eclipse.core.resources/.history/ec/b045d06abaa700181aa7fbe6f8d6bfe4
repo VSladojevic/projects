@@ -1,0 +1,18 @@
+INFO  01:31:08,986 - Compiling source file: C:\pp1VS\workspace\MJCompiler\test\program.mj
+INFO  01:31:09,118 - #22 program
+INFO  01:31:09,119 - #19 MJProgram
+INFO  01:31:09,119 - #23 {
+INFO  01:31:09,122 - #35 void
+INFO  01:31:09,124 - #19 main
+INFO  01:31:09,126 - #31 (
+INFO  01:31:09,128 - #32 )
+INFO  01:31:09,130 - #19 int
+INFO  01:31:09,131 - #19 x
+INFO  01:31:09,133 - #27 ,
+INFO  01:31:09,134 - #19 a
+INFO  01:31:09,135 - #28 =
+ERROR 01:31:09,135 - 
+Sintaksna greska na liniji 3
+ERROR 01:31:09,135 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 3
+INFO  01:31:09,166 - Deklarisanje promenljive x na liniji 3
+INFO  01:31:09,166 - Print calls = 0

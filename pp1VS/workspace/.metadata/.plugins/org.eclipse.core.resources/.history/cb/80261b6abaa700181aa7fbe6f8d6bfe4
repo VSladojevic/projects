@@ -1,0 +1,47 @@
+INFO  15:08:49,077 - Compiling source file: C:\pp1VS\workspace\MJCompiler\test\program.mj
+INFO  15:08:49,161 - #22 program
+INFO  15:08:49,161 - #19 MJProgram
+INFO  15:08:49,161 - #23 {
+INFO  15:08:49,163 - #35 void
+INFO  15:08:49,165 - #19 main
+INFO  15:08:49,166 - #31 (
+INFO  15:08:49,167 - #32 )
+INFO  15:08:49,168 - #23 {
+INFO  15:08:49,170 - #19 y
+INFO  15:08:49,172 - #28 =
+INFO  15:08:49,172 - #18 2
+INFO  15:08:49,173 - #26 ;
+INFO  15:08:49,174 - #19 x
+INFO  15:08:49,174 - #28 =
+INFO  15:08:49,175 - #19 y
+INFO  15:08:49,175 - #41 +
+INFO  15:08:49,176 - #18 2
+INFO  15:08:49,178 - #26 ;
+INFO  15:08:49,179 - #19 y
+INFO  15:08:49,179 - #28 =
+INFO  15:08:49,179 - #19 k
+INFO  15:08:49,179 - #31 (
+INFO  15:08:49,180 - #32 )
+INFO  15:08:49,180 - #41 +
+INFO  15:08:49,181 - #18 3
+INFO  15:08:49,181 - #26 ;
+INFO  15:08:49,182 - #37 print
+INFO  15:08:49,182 - #31 (
+INFO  15:08:49,182 - #19 y
+INFO  15:08:49,182 - #32 )
+INFO  15:08:49,183 - #26 ;
+INFO  15:08:49,183 - #24 }
+INFO  15:08:49,183 - #24 }
+INFO  15:08:49,210 - Obradjuje se funkcija main na liniji 6
+ERROR 15:08:49,210 - Funkcija sa nazivom main mora biti bez argumenata
+ERROR 15:08:49,211 - Greska na liniji 7: promenljiva nije prethodno definsana
+ERROR 15:08:49,212 - Greska na liniji 7: izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli
+ERROR 15:08:49,212 - Greska na liniji 8: promenljiva nije prethodno definsana
+ERROR 15:08:49,212 - Greska na liniji 8: promenljiva nije prethodno definsana
+ERROR 15:08:49,212 - Term i mulop moraju oba biti tipa int na liniji 8
+ERROR 15:08:49,212 - Greska na liniji 9: promenljiva nije prethodno definsana
+ERROR 15:08:49,212 - Greska na liniji 9: promenljiva nije prethodno definsana
+ERROR 15:08:49,213 - Term i mulop moraju oba biti tipa int na liniji 9
+ERROR 15:08:49,213 - Greska na liniji 10: promenljiva nije prethodno definsana
+ERROR 15:08:49,213 - Greska na liniji 10: print moze primati samo int, char i bool tipove
+INFO  15:08:49,213 - Print calls = 1

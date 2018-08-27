@@ -1,0 +1,257 @@
+INFO  18:55:36,664 - Compiling source file: C:\pp1VS\workspace\MJCompiler\test\program.mj
+INFO  18:55:36,986 - #22 program
+INFO  18:55:36,993 - #19 test301
+INFO  18:55:37,000 - #25 const
+INFO  18:55:37,016 - #19 int
+INFO  18:55:37,017 - #19 jedan
+INFO  18:55:37,025 - #28 =
+INFO  18:55:37,026 - #18 1
+INFO  18:55:37,026 - #26 ;
+INFO  18:55:37,045 - #25 const
+INFO  18:55:37,055 - #19 int
+INFO  18:55:37,055 - #19 pet
+INFO  18:55:37,056 - #28 =
+INFO  18:55:37,056 - #18 5
+INFO  18:55:37,057 - #26 ;
+INFO  18:55:37,058 - #19 int
+INFO  18:55:37,058 - #19 niz
+INFO  18:55:37,061 - #29 [
+INFO  18:55:37,062 - #30 ]
+INFO  18:55:37,062 - #26 ;
+INFO  18:55:37,074 - #19 char
+INFO  18:55:37,076 - #19 nizch
+INFO  18:55:37,077 - #29 [
+INFO  18:55:37,078 - #30 ]
+INFO  18:55:37,078 - #26 ;
+INFO  18:55:37,080 - #23 {
+INFO  18:55:37,081 - #35 void
+INFO  18:55:37,084 - #19 main
+INFO  18:55:37,094 - #31 (
+INFO  18:55:37,098 - #32 )
+INFO  18:55:37,101 - #19 int
+INFO  18:55:37,104 - #19 bodovi
+INFO  18:55:37,105 - #26 ;
+INFO  18:55:37,105 - #23 {
+INFO  18:55:37,106 - #19 bodovi
+INFO  18:55:37,109 - #28 =
+INFO  18:55:37,129 - #18 0
+INFO  18:55:37,130 - #26 ;
+INFO  18:55:37,132 - #19 bodovi
+INFO  18:55:37,133 - #38 ++
+INFO  18:55:37,133 - #26 ;
+INFO  18:55:37,134 - #19 bodovi
+INFO  18:55:37,134 - #28 =
+INFO  18:55:37,136 - #19 bodovi
+INFO  18:55:37,136 - #41 +
+INFO  18:55:37,138 - #19 jedan
+INFO  18:55:37,143 - #26 ;
+INFO  18:55:37,145 - #19 bodovi
+INFO  18:55:37,146 - #28 =
+INFO  18:55:37,146 - #19 bodovi
+INFO  18:55:37,146 - #42 *
+INFO  18:55:37,147 - #19 pet
+INFO  18:55:37,160 - #26 ;
+INFO  18:55:37,161 - #19 bodovi
+INFO  18:55:37,162 - #39 --
+INFO  18:55:37,162 - #26 ;
+INFO  18:55:37,163 - #37 print
+INFO  18:55:37,163 - #31 (
+INFO  18:55:37,164 - #19 bodovi
+INFO  18:55:37,164 - #32 )
+INFO  18:55:37,165 - #26 ;
+INFO  18:55:37,165 - #19 niz
+INFO  18:55:37,166 - #28 =
+INFO  18:55:37,166 - #45 new
+INFO  18:55:37,167 - #19 int
+INFO  18:55:37,168 - #29 [
+INFO  18:55:37,168 - #18 2
+INFO  18:55:37,169 - #30 ]
+INFO  18:55:37,170 - #26 ;
+INFO  18:55:37,180 - #19 niz
+INFO  18:55:37,181 - #29 [
+INFO  18:55:37,181 - #18 0
+INFO  18:55:37,181 - #30 ]
+INFO  18:55:37,182 - #28 =
+INFO  18:55:37,193 - #19 pet
+INFO  18:55:37,194 - #26 ;
+INFO  18:55:37,194 - #19 niz
+INFO  18:55:37,194 - #29 [
+INFO  18:55:37,194 - #18 1
+INFO  18:55:37,194 - #30 ]
+INFO  18:55:37,195 - #28 =
+INFO  18:55:37,195 - #18 10
+INFO  18:55:37,195 - #26 ;
+INFO  18:55:37,196 - #19 bodovi
+INFO  18:55:37,197 - #28 =
+INFO  18:55:37,197 - #19 niz
+INFO  18:55:37,197 - #29 [
+INFO  18:55:37,197 - #18 1
+INFO  18:55:37,197 - #30 ]
+INFO  18:55:37,198 - #43 /
+INFO  18:55:37,201 - #19 niz
+INFO  18:55:37,204 - #29 [
+INFO  18:55:37,204 - #18 0
+INFO  18:55:37,204 - #30 ]
+INFO  18:55:37,205 - #26 ;
+INFO  18:55:37,205 - #37 print
+INFO  18:55:37,205 - #31 (
+INFO  18:55:37,207 - #19 bodovi
+INFO  18:55:37,207 - #32 )
+INFO  18:55:37,207 - #26 ;
+INFO  18:55:37,208 - #37 print
+INFO  18:55:37,208 - #31 (
+INFO  18:55:37,208 - #19 niz
+INFO  18:55:37,209 - #29 [
+INFO  18:55:37,209 - #18 1
+INFO  18:55:37,212 - #30 ]
+INFO  18:55:37,212 - #32 )
+INFO  18:55:37,213 - #26 ;
+INFO  18:55:37,213 - #19 nizch
+INFO  18:55:37,213 - #28 =
+INFO  18:55:37,214 - #45 new
+INFO  18:55:37,214 - #19 char
+INFO  18:55:37,214 - #29 [
+INFO  18:55:37,215 - #18 3
+INFO  18:55:37,215 - #30 ]
+INFO  18:55:37,215 - #26 ;
+INFO  18:55:37,216 - #19 nizch
+INFO  18:55:37,216 - #29 [
+INFO  18:55:37,216 - #18 0
+INFO  18:55:37,216 - #30 ]
+INFO  18:55:37,217 - #28 =
+INFO  18:55:37,217 - #21 a
+INFO  18:55:37,218 - #26 ;
+INFO  18:55:37,218 - #19 nizch
+INFO  18:55:37,218 - #29 [
+INFO  18:55:37,219 - #19 jedan
+INFO  18:55:37,219 - #30 ]
+INFO  18:55:37,220 - #28 =
+INFO  18:55:37,221 - #21 b
+INFO  18:55:37,221 - #26 ;
+INFO  18:55:37,222 - #19 nizch
+INFO  18:55:37,222 - #29 [
+INFO  18:55:37,222 - #19 pet
+INFO  18:55:37,223 - #40 -
+INFO  18:55:37,223 - #18 3
+INFO  18:55:37,225 - #30 ]
+INFO  18:55:37,225 - #28 =
+INFO  18:55:37,226 - #21 c
+INFO  18:55:37,226 - #26 ;
+INFO  18:55:37,226 - #37 print
+INFO  18:55:37,226 - #31 (
+INFO  18:55:37,226 - #19 nizch
+INFO  18:55:37,227 - #29 [
+INFO  18:55:37,227 - #18 2
+INFO  18:55:37,227 - #40 -
+INFO  18:55:37,227 - #18 1
+INFO  18:55:37,227 - #30 ]
+INFO  18:55:37,228 - #32 )
+INFO  18:55:37,228 - #26 ;
+INFO  18:55:37,228 - #37 print
+INFO  18:55:37,228 - #31 (
+INFO  18:55:37,229 - #19 nizch
+INFO  18:55:37,229 - #29 [
+INFO  18:55:37,229 - #19 jedan
+INFO  18:55:37,230 - #42 *
+INFO  18:55:37,231 - #18 2
+INFO  18:55:37,231 - #30 ]
+INFO  18:55:37,231 - #32 )
+INFO  18:55:37,231 - #26 ;
+INFO  18:55:37,232 - #19 bodovi
+INFO  18:55:37,232 - #28 =
+INFO  18:55:37,232 - #19 bodovi
+INFO  18:55:37,233 - #41 +
+INFO  18:55:37,233 - #31 (
+INFO  18:55:37,234 - #31 (
+INFO  18:55:37,234 - #19 pet
+INFO  18:55:37,235 - #42 *
+INFO  18:55:37,235 - #19 jedan
+INFO  18:55:37,235 - #40 -
+INFO  18:55:37,235 - #18 1
+INFO  18:55:37,236 - #32 )
+INFO  18:55:37,236 - #42 *
+INFO  18:55:37,237 - #18 2
+INFO  18:55:37,237 - #40 -
+INFO  18:55:37,238 - #31 (
+INFO  18:55:37,238 - #18 3
+INFO  18:55:37,238 - #44 %
+INFO  18:55:37,239 - #18 2
+INFO  18:55:37,251 - #41 +
+INFO  18:55:37,253 - #18 3
+INFO  18:55:37,254 - #42 *
+INFO  18:55:37,254 - #18 2
+INFO  18:55:37,254 - #40 -
+INFO  18:55:37,254 - #18 3
+INFO  18:55:37,255 - #32 )
+INFO  18:55:37,255 - #40 -
+INFO  18:55:37,255 - #18 1
+INFO  18:55:37,255 - #42 *
+INFO  18:55:37,255 - #18 0
+INFO  18:55:37,255 - #32 )
+INFO  18:55:37,256 - #26 ;
+INFO  18:55:37,265 - #37 print
+INFO  18:55:37,269 - #31 (
+INFO  18:55:37,275 - #19 bodovi
+INFO  18:55:37,275 - #32 )
+INFO  18:55:37,275 - #26 ;
+INFO  18:55:37,276 - #36 read
+INFO  18:55:37,276 - #31 (
+INFO  18:55:37,276 - #19 bodovi
+INFO  18:55:37,276 - #32 )
+INFO  18:55:37,277 - #26 ;
+INFO  18:55:37,277 - #19 bodovi
+INFO  18:55:37,277 - #28 =
+INFO  18:55:37,278 - #19 bodovi
+INFO  18:55:37,278 - #41 +
+INFO  18:55:37,278 - #18 1
+INFO  18:55:37,278 - #26 ;
+INFO  18:55:37,278 - #37 print
+INFO  18:55:37,279 - #31 (
+INFO  18:55:37,279 - #19 bodovi
+INFO  18:55:37,279 - #32 )
+INFO  18:55:37,280 - #26 ;
+INFO  18:55:37,282 - #24 }
+INFO  18:55:37,282 - #24 }
+INFO  18:55:37,334 - Deklarisanje niza niz na liniji 8
+INFO  18:55:37,334 - Deklarisanje niza nizch na liniji 10
+INFO  18:55:37,335 - Obradjuje se funkcija main na liniji 13
+INFO  18:55:37,335 - Deklarisanje promenljive bodovi na liniji 13
+INFO  18:55:37,336 - Konstanta/Simbol bodovi na liniji 16
+INFO  18:55:37,337 - Konstanta/Simbol bodovi na liniji 17
+INFO  18:55:37,337 - Konstanta/Simbol bodovi na liniji 18
+INFO  18:55:37,337 - Konstanta/Simbol bodovi na liniji 18
+INFO  18:55:37,338 - Konstanta/Simbol jedan na liniji 18
+INFO  18:55:37,338 - Konstanta/Simbol bodovi na liniji 19
+INFO  18:55:37,338 - Konstanta/Simbol bodovi na liniji 19
+INFO  18:55:37,338 - Konstanta/Simbol pet na liniji 19
+INFO  18:55:37,339 - Konstanta/Simbol bodovi na liniji 20
+INFO  18:55:37,339 - Konstanta/Simbol bodovi na liniji 21
+INFO  18:55:37,339 - Konstanta/Simbol niz na liniji 24
+INFO  18:55:37,340 - Konstanta/Simbol pet na liniji 25
+ERROR 18:55:37,341 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 25
+ERROR 18:55:37,341 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 26
+INFO  18:55:37,341 - Konstanta/Simbol bodovi na liniji 27
+ERROR 18:55:37,342 - Term i mulop moraju oba biti tipa int na liniji 27
+ERROR 18:55:37,343 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 27
+INFO  18:55:37,344 - Konstanta/Simbol bodovi na liniji 28
+ERROR 18:55:37,345 - Print moze primati samo int, char i bool tipove na liniji 29
+INFO  18:55:37,345 - Konstanta/Simbol nizch na liniji 32
+ERROR 18:55:37,345 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 33
+INFO  18:55:37,345 - Konstanta/Simbol jedan na liniji 34
+ERROR 18:55:37,345 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 34
+INFO  18:55:37,346 - Konstanta/Simbol pet na liniji 35
+ERROR 18:55:37,346 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 35
+ERROR 18:55:37,346 - Print moze primati samo int, char i bool tipove na liniji 36
+INFO  18:55:37,346 - Konstanta/Simbol jedan na liniji 37
+ERROR 18:55:37,346 - Print moze primati samo int, char i bool tipove na liniji 37
+INFO  18:55:37,347 - Konstanta/Simbol bodovi na liniji 40
+INFO  18:55:37,347 - Konstanta/Simbol bodovi na liniji 40
+INFO  18:55:37,347 - Konstanta/Simbol pet na liniji 40
+INFO  18:55:37,348 - Konstanta/Simbol jedan na liniji 40
+INFO  18:55:37,351 - Konstanta/Simbol bodovi na liniji 41
+INFO  18:55:37,354 - Konstanta/Simbol bodovi na liniji 44
+INFO  18:55:37,354 - Konstanta/Simbol bodovi na liniji 45
+INFO  18:55:37,355 - Konstanta/Simbol bodovi na liniji 45
+INFO  18:55:37,355 - Konstanta/Simbol bodovi na liniji 46
+INFO  18:55:37,358 - Print calls = 4
+ERROR 18:55:37,383 - Parsiranje NIJE uspesno zavrseno!

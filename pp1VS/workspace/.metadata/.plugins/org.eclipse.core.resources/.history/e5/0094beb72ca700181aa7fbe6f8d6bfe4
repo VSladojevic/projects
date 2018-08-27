@@ -1,0 +1,47 @@
+program MJProgram
+	int niz[];
+{
+	
+	int suma(int a[]) int duz, i, sum; {
+	
+		//niz = new int[5];
+		
+		i = 0;
+		duz = len(a);
+		do{
+			a[i] = i+1;
+			i++;
+		} while(i<duz);
+		
+		i = 0;
+		sum = 0;
+		print('S');
+		
+		if(duz > 0)
+			do{
+				sum = sum + a[i];
+				i++;
+			} while(i<duz);
+		//print(a);
+		return sum;
+	}
+	
+	void main() bool b[]; int i,j,sum;
+	{
+		niz = new int[5];
+		print(suma(niz));
+		
+		i = 0;
+		
+		do{
+			sum = 0;
+			j = 5;
+			do{
+				sum = sum + j;
+				j--;
+			}while(j>i);
+			i++;
+			print(sum);
+		}while(i<5);
+	}
+}

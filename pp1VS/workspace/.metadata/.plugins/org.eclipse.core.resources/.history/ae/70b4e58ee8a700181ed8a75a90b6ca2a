@@ -1,0 +1,30 @@
+program MJProgram
+	int c, x, y;
+	bool b;
+	intt a;
+	const int konst = 'c', konst2 = 5, konst3 = '1';
+{
+	int metoda(konst formalParam) int prom; char c;{
+		prom = prom + c;
+		prom = 5 * c;
+		prom = -'c';
+		prom = konst2();
+	}
+	
+	void metoda2(int formalParam) int niz[];{
+		niz = new int[metoda()];
+		metoda('c');
+		print(b['c']);
+		read(metoda);
+	}
+	
+	char main() char c;
+	{
+		main = c;
+		c++;
+		konst--;
+		c();
+		return;
+		return 5;
+	}
+}

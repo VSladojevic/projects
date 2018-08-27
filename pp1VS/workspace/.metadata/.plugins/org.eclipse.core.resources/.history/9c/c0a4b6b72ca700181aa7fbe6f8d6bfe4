@@ -1,0 +1,35 @@
+program MJProgram
+	int c, x, y; bool b;
+	const int konst = 1;
+{
+	int k (int i, bool b) int c, niz[]; {
+		print(b,20);
+		niz = new int[3];
+		niz[0] = i;
+		niz[0] = 1 + niz[0];
+		niz[0]++;
+		print(niz[0]);
+		read(niz[1]);
+		print(niz[1]);
+		c = 0;
+		return c+3;
+	}
+	
+	int main() char c;
+	{
+		b = false;
+		print(b);
+		c = 'a';
+		print(c);
+		//read(c);
+		//print(c);
+		y = 2;
+		x = (-y+5)%2*3;
+		x++;
+		print(x,20);
+		//read(x);
+		//print(x);
+		y = k(1, true);
+		return x;
+	}
+}

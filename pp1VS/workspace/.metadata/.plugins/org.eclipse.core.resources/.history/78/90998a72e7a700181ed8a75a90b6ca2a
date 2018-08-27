@@ -1,0 +1,258 @@
+INFO  22:19:15,615 - Compiling source file: C:\pp1VS\workspace\MJCompiler\test\program.mj
+INFO  22:19:15,783 - #22 program
+INFO  22:19:15,783 - #19 test301
+INFO  22:19:15,783 - #25 const
+INFO  22:19:15,786 - #19 int
+INFO  22:19:15,787 - #19 jedan
+INFO  22:19:15,788 - #28 =
+INFO  22:19:15,789 - #18 1
+INFO  22:19:15,790 - #26 ;
+INFO  22:19:15,793 - #25 const
+INFO  22:19:15,794 - #19 int
+INFO  22:19:15,794 - #19 pet
+INFO  22:19:15,794 - #28 =
+INFO  22:19:15,794 - #18 5
+INFO  22:19:15,795 - #26 ;
+INFO  22:19:15,795 - #19 int
+INFO  22:19:15,795 - #19 niz
+INFO  22:19:15,795 - #29 [
+INFO  22:19:15,796 - #30 ]
+INFO  22:19:15,796 - #26 ;
+INFO  22:19:15,797 - #19 char
+INFO  22:19:15,798 - #19 nizch
+INFO  22:19:15,798 - #29 [
+INFO  22:19:15,799 - #30 ]
+INFO  22:19:15,799 - #26 ;
+INFO  22:19:15,799 - #23 {
+INFO  22:19:15,800 - #35 void
+INFO  22:19:15,801 - #19 main
+INFO  22:19:15,802 - #31 (
+INFO  22:19:15,804 - #32 )
+INFO  22:19:15,806 - #19 int
+INFO  22:19:15,807 - #19 bodovi
+INFO  22:19:15,807 - #26 ;
+INFO  22:19:15,823 - #23 {
+INFO  22:19:15,823 - #19 bodovi
+INFO  22:19:15,825 - #28 =
+INFO  22:19:15,826 - #18 0
+INFO  22:19:15,826 - #26 ;
+INFO  22:19:15,828 - #19 bodovi
+INFO  22:19:15,830 - #38 ++
+INFO  22:19:15,830 - #26 ;
+INFO  22:19:15,831 - #19 bodovi
+INFO  22:19:15,831 - #28 =
+INFO  22:19:15,831 - #19 bodovi
+INFO  22:19:15,831 - #41 +
+INFO  22:19:15,832 - #19 jedan
+INFO  22:19:15,834 - #26 ;
+INFO  22:19:15,835 - #19 bodovi
+INFO  22:19:15,835 - #28 =
+INFO  22:19:15,835 - #19 bodovi
+INFO  22:19:15,835 - #42 *
+INFO  22:19:15,835 - #19 pet
+INFO  22:19:15,838 - #26 ;
+INFO  22:19:15,838 - #19 bodovi
+INFO  22:19:15,839 - #39 --
+INFO  22:19:15,839 - #26 ;
+INFO  22:19:15,839 - #37 print
+INFO  22:19:15,839 - #31 (
+INFO  22:19:15,840 - #19 bodovi
+INFO  22:19:15,840 - #32 )
+INFO  22:19:15,840 - #26 ;
+INFO  22:19:15,840 - #19 niz
+INFO  22:19:15,841 - #28 =
+INFO  22:19:15,841 - #45 new
+INFO  22:19:15,841 - #19 int
+INFO  22:19:15,841 - #29 [
+INFO  22:19:15,841 - #18 2
+INFO  22:19:15,841 - #30 ]
+INFO  22:19:15,842 - #26 ;
+INFO  22:19:15,845 - #19 niz
+INFO  22:19:15,845 - #29 [
+INFO  22:19:15,845 - #18 0
+INFO  22:19:15,845 - #30 ]
+INFO  22:19:15,845 - #28 =
+INFO  22:19:15,846 - #19 pet
+INFO  22:19:15,846 - #26 ;
+INFO  22:19:15,846 - #19 niz
+INFO  22:19:15,846 - #29 [
+INFO  22:19:15,846 - #18 1
+INFO  22:19:15,847 - #30 ]
+INFO  22:19:15,847 - #28 =
+INFO  22:19:15,847 - #18 10
+INFO  22:19:15,847 - #26 ;
+INFO  22:19:15,848 - #19 bodovi
+INFO  22:19:15,848 - #28 =
+INFO  22:19:15,848 - #19 niz
+INFO  22:19:15,848 - #29 [
+INFO  22:19:15,848 - #18 1
+INFO  22:19:15,848 - #30 ]
+INFO  22:19:15,850 - #43 /
+INFO  22:19:15,850 - #19 niz
+INFO  22:19:15,852 - #29 [
+INFO  22:19:15,852 - #18 0
+INFO  22:19:15,853 - #30 ]
+INFO  22:19:15,853 - #26 ;
+INFO  22:19:15,854 - #37 print
+INFO  22:19:15,854 - #31 (
+INFO  22:19:15,854 - #19 bodovi
+INFO  22:19:15,854 - #32 )
+INFO  22:19:15,854 - #26 ;
+INFO  22:19:15,854 - #37 print
+INFO  22:19:15,854 - #31 (
+INFO  22:19:15,855 - #19 niz
+INFO  22:19:15,855 - #29 [
+INFO  22:19:15,855 - #18 1
+INFO  22:19:15,855 - #30 ]
+INFO  22:19:15,855 - #32 )
+INFO  22:19:15,855 - #26 ;
+INFO  22:19:15,855 - #19 nizch
+INFO  22:19:15,856 - #28 =
+INFO  22:19:15,856 - #45 new
+INFO  22:19:15,856 - #19 char
+INFO  22:19:15,856 - #29 [
+INFO  22:19:15,856 - #18 3
+INFO  22:19:15,857 - #30 ]
+INFO  22:19:15,857 - #26 ;
+INFO  22:19:15,857 - #19 nizch
+INFO  22:19:15,857 - #29 [
+INFO  22:19:15,857 - #18 0
+INFO  22:19:15,857 - #30 ]
+INFO  22:19:15,858 - #28 =
+INFO  22:19:15,858 - #21 a
+INFO  22:19:15,858 - #26 ;
+INFO  22:19:15,859 - #19 nizch
+INFO  22:19:15,859 - #29 [
+INFO  22:19:15,859 - #19 jedan
+INFO  22:19:15,859 - #30 ]
+INFO  22:19:15,860 - #28 =
+INFO  22:19:15,866 - #21 b
+INFO  22:19:15,875 - #26 ;
+INFO  22:19:15,875 - #19 nizch
+INFO  22:19:15,875 - #29 [
+INFO  22:19:15,875 - #19 pet
+INFO  22:19:15,875 - #40 -
+INFO  22:19:15,875 - #18 3
+INFO  22:19:15,877 - #30 ]
+INFO  22:19:15,877 - #28 =
+INFO  22:19:15,877 - #21 c
+INFO  22:19:15,877 - #26 ;
+INFO  22:19:20,879 - #37 print
+INFO  22:19:20,879 - #31 (
+INFO  22:19:20,879 - #19 nizch
+INFO  22:19:20,879 - #29 [
+INFO  22:19:20,879 - #18 2
+INFO  22:19:20,879 - #40 -
+INFO  22:19:20,880 - #18 1
+INFO  22:19:20,880 - #30 ]
+INFO  22:19:20,880 - #32 )
+INFO  22:19:20,880 - #26 ;
+INFO  22:19:20,880 - #37 print
+INFO  22:19:20,881 - #31 (
+INFO  22:19:20,881 - #19 nizch
+INFO  22:19:20,881 - #29 [
+INFO  22:19:20,881 - #19 jedan
+INFO  22:19:20,881 - #42 *
+INFO  22:19:20,881 - #18 2
+INFO  22:19:20,881 - #30 ]
+INFO  22:19:20,881 - #32 )
+INFO  22:19:20,882 - #26 ;
+INFO  22:19:20,882 - #19 bodovi
+INFO  22:19:20,882 - #28 =
+INFO  22:19:20,882 - #19 bodovi
+INFO  22:19:20,882 - #41 +
+INFO  22:19:20,882 - #31 (
+INFO  22:19:20,883 - #31 (
+INFO  22:19:20,883 - #19 pet
+INFO  22:19:20,883 - #42 *
+INFO  22:19:20,883 - #19 jedan
+INFO  22:19:20,883 - #40 -
+INFO  22:19:20,883 - #18 1
+INFO  22:19:20,883 - #32 )
+INFO  22:19:20,883 - #42 *
+INFO  22:19:20,884 - #18 2
+INFO  22:19:20,884 - #40 -
+INFO  22:19:20,884 - #31 (
+INFO  22:19:20,884 - #18 3
+INFO  22:19:20,884 - #44 %
+INFO  22:19:20,884 - #18 2
+INFO  22:19:20,886 - #41 +
+INFO  22:19:20,886 - #18 3
+INFO  22:19:20,886 - #42 *
+INFO  22:19:20,886 - #18 2
+INFO  22:19:20,886 - #40 -
+INFO  22:19:20,886 - #18 3
+INFO  22:19:20,886 - #32 )
+INFO  22:19:20,887 - #40 -
+INFO  22:19:20,887 - #18 1
+INFO  22:19:20,887 - #42 *
+INFO  22:19:20,887 - #18 0
+INFO  22:19:20,887 - #32 )
+INFO  22:19:20,887 - #26 ;
+INFO  22:19:20,887 - #37 print
+INFO  22:19:20,888 - #31 (
+INFO  22:19:20,888 - #19 bodovi
+INFO  22:19:20,888 - #32 )
+INFO  22:19:20,888 - #26 ;
+INFO  22:19:20,888 - #36 read
+INFO  22:19:20,889 - #31 (
+INFO  22:19:20,889 - #19 bodovi
+INFO  22:19:20,889 - #32 )
+INFO  22:19:20,889 - #26 ;
+INFO  22:19:20,889 - #19 bodovi
+INFO  22:19:20,889 - #28 =
+INFO  22:19:20,890 - #19 bodovi
+INFO  22:19:20,890 - #41 +
+INFO  22:19:20,890 - #18 1
+INFO  22:19:20,890 - #26 ;
+INFO  22:19:20,890 - #37 print
+INFO  22:19:20,890 - #31 (
+INFO  22:19:20,890 - #19 bodovi
+INFO  22:19:20,891 - #32 )
+INFO  22:19:20,891 - #26 ;
+INFO  22:19:20,891 - #24 }
+INFO  22:19:20,891 - #24 }
+INFO  22:19:20,921 - Deklarisanje niza niz na liniji 8
+INFO  22:19:20,922 - Deklarisanje niza nizch na liniji 10
+INFO  22:19:20,922 - Obradjuje se funkcija main na liniji 13
+INFO  22:19:20,922 - Deklarisanje promenljive bodovi na liniji 13
+INFO  22:19:20,922 - Konstanta/Simbol bodovi na liniji 16
+INFO  22:19:20,923 - Konstanta/Simbol bodovi na liniji 17
+INFO  22:19:20,923 - Konstanta/Simbol bodovi na liniji 18
+INFO  22:19:20,923 - Konstanta/Simbol bodovi na liniji 18
+INFO  22:19:20,923 - Konstanta/Simbol jedan na liniji 18
+INFO  22:19:20,923 - Konstanta/Simbol bodovi na liniji 19
+INFO  22:19:20,924 - Konstanta/Simbol bodovi na liniji 19
+INFO  22:19:20,924 - Konstanta/Simbol pet na liniji 19
+INFO  22:19:20,924 - Konstanta/Simbol bodovi na liniji 20
+INFO  22:19:20,924 - Konstanta/Simbol bodovi na liniji 21
+INFO  22:19:20,924 - Konstanta/Simbol niz na liniji 24
+INFO  22:19:20,924 - Konstanta/Simbol niz na liniji 25
+INFO  22:19:20,924 - Konstanta/Simbol pet na liniji 25
+INFO  22:19:20,925 - Konstanta/Simbol niz na liniji 26
+INFO  22:19:20,925 - Konstanta/Simbol bodovi na liniji 27
+INFO  22:19:20,925 - Konstanta/Simbol niz na liniji 27
+INFO  22:19:20,925 - Konstanta/Simbol niz na liniji 27
+INFO  22:19:20,925 - Konstanta/Simbol bodovi na liniji 28
+INFO  22:19:20,925 - Konstanta/Simbol niz na liniji 29
+INFO  22:19:20,925 - Konstanta/Simbol nizch na liniji 32
+INFO  22:19:20,926 - Konstanta/Simbol nizch na liniji 33
+INFO  22:19:20,926 - Konstanta/Simbol nizch na liniji 34
+INFO  22:19:20,926 - Konstanta/Simbol jedan na liniji 34
+INFO  22:19:20,926 - Konstanta/Simbol nizch na liniji 35
+INFO  22:19:20,926 - Konstanta/Simbol pet na liniji 35
+INFO  22:19:20,927 - Konstanta/Simbol nizch na liniji 36
+INFO  22:19:20,927 - Konstanta/Simbol nizch na liniji 37
+INFO  22:19:20,927 - Konstanta/Simbol jedan na liniji 37
+INFO  22:19:20,927 - Konstanta/Simbol bodovi na liniji 40
+INFO  22:19:20,928 - Konstanta/Simbol bodovi na liniji 40
+INFO  22:19:21,125 - Konstanta/Simbol pet na liniji 40
+INFO  22:19:21,126 - Konstanta/Simbol jedan na liniji 40
+INFO  22:19:21,126 - Konstanta/Simbol bodovi na liniji 41
+INFO  22:19:21,126 - Konstanta/Simbol bodovi na liniji 44
+INFO  22:19:21,126 - Konstanta/Simbol bodovi na liniji 45
+INFO  22:19:21,127 - Konstanta/Simbol bodovi na liniji 45
+INFO  22:19:21,127 - Konstanta/Simbol bodovi na liniji 46
+INFO  22:19:21,127 - Print calls = 7
+INFO  22:19:21,132 - Generating bytecode file: C:\pp1VS\workspace\MJCompiler\test\program.obj
+INFO  22:19:21,207 - Parsiranje uspesno zavrseno!

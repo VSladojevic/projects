@@ -1,0 +1,575 @@
+package rs.ac.bg.etf.pp1;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Stack;
+
+import org.apache.log4j.Logger;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Struct;
+
+public class SemanticPass extends VisitorAdaptor {
+
+	boolean errorDetected = false;
+	int printCallCount = 0;
+	Obj currentMethod = null;
+	boolean returnFound = false;
+	boolean minusTerm = false;
+	int nVars;
+
+	// trenutni tip kod neke dodele, npr bool kod bool x=...
+	Struct currentType;
+	int constantValue;
+
+	// da li trenutna metoda ima argumente?
+	// zbog provere void main()
+	// boolean noArguments = true;
+	boolean mainFound = false;
+
+	public static final int Bool = 5;
+	public static final Struct boolType = new Struct(Bool);
+
+	Stack<Obj> argsStack = new Stack<Obj>();
+
+	Logger log = Logger.getLogger(getClass());
+
+	public SemanticPass() {
+		Tab.currentScope.addToLocals(new Obj(Obj.Type, "bool", boolType));
+		// System.out.print(Tab.currentScope.getLocals());
+	}
+
+	public void report_error(String message, SyntaxNode info) {
+		errorDetected = true;
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		log.error(msg.toString());
+	}
+
+	public void report_info(String message, SyntaxNode info) {
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		log.info(msg.toString());
+	}
+
+	public void visit(Program program) {
+		nVars = Tab.currentScope.getnVars();
+
+		Tab.chainLocalSymbols(program.getProgName().obj);
+		Tab.closeScope();
+		if (mainFound == false) {
+			report_error("Mtoda void main() mora biti deklarisana", null);
+		}
+	}
+
+	public void visit(ProgName progName) {
+		progName.obj = Tab.insert(Obj.Prog, progName.getI1(), Tab.noType);
+		Tab.openScope();
+	}
+
+	public void visit(EpsilonFormParsMaybe noArgsMethod) {
+		// noArguments = true;
+		if (currentMethod != null) {
+			currentMethod.setLevel(0);
+		}
+	}
+
+	public void visit(ConstDecl constDecl) {
+		currentType = null;
+	}
+
+	public void visit(BooleanConst booleanConst) {
+		booleanConst.struct = boolType;
+		if (booleanConst.getB1().equals("true"))
+			constantValue = 1;
+		else
+			constantValue = 0;
+	}
+
+	public void visit(NumberConst numberConst) {
+		numberConst.struct = Tab.intType;
+		constantValue = numberConst.getN1().intValue();
+	}
+
+	public void visit(CharacterConst charConst) {
+		charConst.struct = Tab.charType;
+		constantValue = charConst.getC1().charValue();
+	}
+
+	public void visit(ConstSingle constSingle) {
+		Struct constType = constSingle.getConstName().struct;
+
+		if (currentType.equals(constType)) {
+			if (Tab.currentScope.findSymbol(constSingle.getI1()) != null) {
+				report_error("Varijabla: " + constSingle.getI1() + " je vec deklarisana  u istom opsegu!", constSingle);
+			} else {
+				Obj constVar = Tab.insert(Obj.Con, constSingle.getI1(), currentType);
+				constVar.setAdr(constantValue);
+				constantValue = 0;
+			}
+		} else {
+			report_error("Greska - Doslo je do nepoklapanja tipa pri dodeli konstanti: " + constSingle.getI1(),
+					constSingle);
+		}
+	}
+
+	public void visit(VarDecl varDecl) {
+		currentType = null;
+	}
+
+	public void visit(Type type) {
+		Obj typeNode = Tab.find(type.getI1());
+		if (typeNode == Tab.noObj) {
+			report_error("Nije pronadjen tip " + type.getI1() + " u tabeli simbola", type);
+			type.struct = Tab.noType;
+		} else {
+			if (Obj.Type == typeNode.getKind()) {
+				type.struct = typeNode.getType();
+			} else {
+				report_error("Ime " + type.getI1() + " ne predstavlja tip ", type);
+				type.struct = Tab.noType;
+			}
+		}
+		currentType = type.struct;
+	}
+
+	public void visit(FormParametersMaybe funcWithParams) {
+		// noArguments = false;
+	}
+
+	public void visit(MethodDecl methodDecl) {
+		// nema return-a, a f-ja nije void
+		if (!returnFound && currentMethod.getType() != Tab.noType) {
+			report_error("Funkcija " + currentMethod.getName() + " nema return iskaz!", methodDecl);
+		}
+
+		Tab.chainLocalSymbols(currentMethod);
+		Tab.closeScope();
+
+		returnFound = false;
+		currentMethod = null;
+		// noArguments = false;
+	}
+
+	public void visit(MethodTypeName methodTypeName) {
+		if (Tab.currentScope().findSymbol(methodTypeName.getI2()) != null) {
+			report_error("Metoda " + methodTypeName.getI2() + " je vec deklarisana! ", methodTypeName);
+		}
+
+		Struct methodType = Tab.noType;
+		if (methodTypeName.getMethodReturn() instanceof MethodReturnType) {
+			methodType = ((MethodReturnType) methodTypeName.getMethodReturn()).getType().struct;
+		}
+
+		// ako je void ubacicemo noType
+		currentMethod = Tab.insert(Obj.Meth, methodTypeName.getI2(), methodType);
+		methodTypeName.obj = currentMethod;
+		currentMethod.setLevel(0);
+		Tab.openScope();
+		report_info("Obradjuje se funkcija " + methodTypeName.getI2(), methodTypeName);
+
+		if (methodTypeName.getI2().equals("main")) {
+			if (methodType != Tab.noType) {
+				report_error("Funkcija sa nazivom main mora biti tipa void", methodTypeName);
+			}
+			/*
+			if (!noArguments) {
+				report_error("Funkcija sa nazivom main mora biti bez argumenata", methodTypeName);
+			}
+			*/
+			mainFound = true;
+		}
+
+	}
+
+	public void visit(PrintStatement printStmt) {
+		Struct type = printStmt.getExprExpanded().struct;
+		if (type != Tab.intType && type != Tab.charType && type != boolType) {
+			report_error("Print moze primati samo int, char i bool tipove", printStmt);
+		} else {
+			printCallCount++;
+		}
+	}
+
+	public void visit(ReadStatement readStmt) {
+		int kind = readStmt.getDesignator().obj.getKind();
+		if (kind != Obj.Var && kind != Obj.Elem) {
+			report_error("Designator u read statement-u mora biti promenljiva ili element niza", readStmt);
+		}
+
+		Struct type = readStmt.getDesignator().obj.getType();
+		if (type != Tab.intType && type != Tab.charType && type != boolType) {
+			report_error("Designator u read statement-u mora biti tipa int, char ili bool", readStmt);
+		}
+	}
+
+	public void visit(ReturnEmptyStatement returnExpr) {
+		returnFound = true;
+
+		if (currentMethod == null) {
+			report_error("Return statement mora biti u okviru funkcije", returnExpr);
+			return;
+		}
+
+		Struct currentMethodType = currentMethod.getType();
+
+		if (currentMethodType != Tab.noType) {
+			report_error("Neodgovarajuci return za funkciju koja nije tipa void", returnExpr);
+		}
+	}
+
+	public void visit(ReturnExprStatement returnExpr) {
+		returnFound = true;
+
+		if (currentMethod == null) {
+			report_error("Rreturn statement mora biti u okviru funkcije", returnExpr);
+			return;
+		}
+
+		Struct returnType = returnExpr.getExpr().struct;
+		Struct currentMethodType = currentMethod.getType();
+
+		if (!currentMethodType.compatibleWith(returnType)) {
+			report_error("Greska: Tip return iskaza nije kompatibilan sa tipom " + currentMethod.getName() + " metode",
+					returnExpr);
+		}
+
+	}
+
+	public void visit(Var var) {
+		if (Tab.currentScope().findSymbol(var.getI1()) != null) {
+			report_error("Promenljiva je vec definisana u trenutnom scope-u", var);
+		} else {
+			report_info("Deklarisanje promenljive " + var.getI1(), var);
+			Tab.insert(Obj.Var, var.getI1(), currentType);
+		}
+	}
+
+	public void visit(VarArrayDecl varArrayDecl) {
+		if (Tab.currentScope().findSymbol(varArrayDecl.getI1()) != null) {
+			report_error("Niz je vec definisan u trenutnom scope-u", varArrayDecl);
+		} else {
+			report_info("Deklarisanje niza " + varArrayDecl.getI1(), varArrayDecl);
+			Tab.insert(Obj.Var, varArrayDecl.getI1(), new Struct(Struct.Array, currentType));
+		}
+	}
+
+	/****************************************************
+	 * DESIGNATOR
+	 */
+
+	public void visit(DesignatorEqual desEqual) {
+		Struct desStruct = desEqual.getDesignator().obj.getType();
+		Obj objDes = desEqual.getDesignator().obj;
+		if (objDes.getKind() != Obj.Var && objDes.getKind() != Obj.Elem) {
+			report_error("Lvrednost mora biti promenljiva ili element niza", desEqual);
+		}
+		if (desEqual.getExpr().struct.assignableTo(desStruct) == false) {
+			report_error("Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli", desEqual);
+
+		}
+	}
+
+	public void visit(DesignatorInc desInc) {
+		Obj objDes = desInc.getDesignator().obj;
+		if (objDes.getKind() != Obj.Var && objDes.getKind() != Obj.Elem) {
+			report_error("Lvrednost mora biti promenljiva ili element niza", desInc);
+		}
+		if (desInc.getDesignator().obj.getType() != Tab.intType) {
+			report_error("Pri inkrementiranju desna strana mora biti int", desInc);
+		}
+	}
+
+	public void visit(DesignatorDec desDec) {
+		Obj objDes = desDec.getDesignator().obj;
+		if (objDes.getKind() != Obj.Var && objDes.getKind() != Obj.Elem) {
+			report_error("Lvrednost mora biti promenljiva ili element niza", desDec);
+		}
+		if (desDec.getDesignator().obj.getType() != Tab.intType) {
+			report_error("Pri dekrementiranju desna strana mora biti int", desDec);
+		}
+	}
+
+	public void visit(DesignNoArr noArray) {
+		Obj var = Tab.find(noArray.getI1());
+		if (var == Tab.noObj) {
+			report_error("Promenljiva " + noArray.getI1() + " nije prethodno definsana", noArray);
+
+		} else {
+			if (var.getKind() == Obj.Con || var.getKind() == Obj.Var)
+				report_info("Konstanta/Simbol " + noArray.getI1(), noArray);
+			else if (var.getKind() == Obj.Meth) {
+				report_info("Metoda " + noArray.getI1(), noArray);
+			} else
+				report_error(noArray.getI1() + " nije ni konstanta, ni simbol, ni metoda ", noArray);
+
+		}
+		noArray.obj = var;
+	}
+
+	public void visit(DesignArr designArr) {
+
+		if (varArr == Tab.noObj) {
+			report_error("Niz nije prethodno definisan ", designArr);
+			designArr.obj = Tab.noObj;
+		}
+		designArr.obj = new Obj(Obj.Elem, desigArr.getDesignator().obj.getName(),
+				desigArr.getDesignator().obj.getType().getElemType());
+		
+		Struct varArrStruct = varArr.getType();
+		if (varArrStruct.getKind() != Struct.Array) {
+			designArr.obj = Tab.noObj;
+			report_error(designArr.getI1() + " nije niz", designArr);
+		}
+
+		if (designArr.getExpr().struct != Tab.intType) {
+			report_error("Indeks niza nije tipa int", designArr);
+		}
+	}
+
+	/****************************************************
+	 * TERM
+	 */
+
+	public void visit(MinusTermExp minusTermExp) {
+		minusTermExp.struct = minusTermExp.getTerm().struct;
+		if (minusTermExp.struct != Tab.intType) {
+			report_error("Term mora biti int", minusTermExp);
+			// minusTermExp.struct = Tab.noType;
+		}
+
+	}
+
+	public void visit(TermExp plusTerm) {
+		plusTerm.struct = plusTerm.getTerm().struct;
+
+	}
+
+	public void visit(FactorNumber factor) {
+		factor.struct = Tab.intType;
+	}
+
+	public void visit(FactorCharacter factor) {
+		factor.struct = Tab.charType;
+	}
+
+	public void visit(FactorBoolean factor) {
+		factor.struct = boolType;
+	}
+
+	public void visit(FactorExpr factor) {
+		factor.struct = factor.getExpr().struct;
+	}
+
+	public void visit(FactorDesignator factor) {
+		factor.struct = factor.getDesignator().obj.getType();
+	}
+
+	public void visit(TermFactor term) {
+		term.struct = term.getFactor().struct;
+	}
+
+	public void visit(TermMulop term) {
+		Struct tStruct = term.getFactor().struct;
+		Struct mulopStruct = term.getTerm().struct;
+		if (tStruct != Tab.intType || mulopStruct != Tab.intType) {
+			report_error("Term i mulop moraju oba biti tipa int", term);
+			term.struct = Tab.noType;
+		} else {
+			term.struct = Tab.intType;
+		}
+
+	}
+
+	public void visit(ExprAddop exprAddop) {
+		Struct type1 = exprAddop.getTerm().struct;
+		Struct type2 = exprAddop.getExpr().struct;
+		if (type1 != Tab.intType || type2 != Tab.intType) {
+			report_error("Term i mulop moraju oba biti tipa int", exprAddop);
+			exprAddop.struct = Tab.noType;
+		} else {
+			exprAddop.struct = Tab.intType;
+		}
+	}
+
+	public void visit(Expr1 expr) {
+		expr.struct = expr.getTermExpanded().struct;
+	}
+
+	public void visit(ExprExpanded1 ee) {
+		ee.struct = ee.getExpr().struct;
+	}
+
+	public void visit(ExprExpanded2 ee) {
+		ee.struct = ee.getExpr().struct;
+	}
+
+	public void visit(FactorNewArrayElem newArrayElem) {
+		if (newArrayElem.getExpr().struct != Tab.intType) {
+			report_error("new Type[Expr], Expr mora biti tipa int", newArrayElem);
+		}
+		newArrayElem.struct = new Struct(Struct.Array, newArrayElem.getType().struct);
+	}
+
+	/****************************************************
+	 * Funkcije, deklaraciji i pozivi
+	 */
+
+	/****************************************************
+	 * Pozivi
+	 */
+
+	// Iz FACTOR-a
+	// poziv funkcije bez parametara
+	public void visit(FactorProc procCall) {
+		procCall.struct = Tab.noType;
+		Obj proc = procCall.getDesignator().obj;
+
+		if (proc.getKind() != Obj.Meth) {
+			report_error("Simbol " + proc.getName() + " nije metoda", procCall);
+		} else {
+			if (proc.getName().equals("main")) {
+				report_error("Nije dozvoljeno pozivati main funkciju", procCall);
+			} else {
+				procCall.struct = proc.getType();
+			}
+		}
+
+	}
+
+	// poziv funkcije sa parametrima
+	public void visit(FactorFunc funcCall) {
+		funcCall.struct = Tab.noType;
+		Obj fun = funcCall.getDesignator().obj;
+		Obj args = funcCall.getActPars().obj;
+
+		// da li da proveravam da li je vec definisana metoda?
+
+		if (fun.getKind() != Obj.Meth) {
+			report_error("Simbol " + fun.getName() + " nije metoda", funcCall);
+		} else {
+			// nece uci u ovaj if
+			if (fun.getName().equals("main")) {
+				report_error("Nije dozvoljeno pozivati main funkciju", funcCall);
+			} else {
+				funcCall.struct = fun.getType();
+				// da li se slaze poziv funkcije sa deklaracijom ???
+				if (args.getLevel() != fun.getLevel()) {
+					report_error("Broj parametara u deklaraciji i pozivu funkcije se ne podudara", funcCall);
+					argsStack.clear();
+				} else {
+					Collection<Obj> formalArgs = fun.getLocalSymbols();
+					for (Iterator iterator = formalArgs.iterator(); iterator.hasNext();) {
+						Obj objFormal = (Obj) iterator.next();
+						Obj objActual = argsStack.pop();
+						if (!objFormal.getType().assignableTo(objActual.getType())) {
+							report_error("Pogresan tip parametra kod argumenta " + objActual.getName()
+									+ ": ocekuje se tip " + objFormal.getType() + ", a ne " + objActual.getType(),
+									funcCall);
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	// Iz DESIGNATOR STATEMENT-a
+	public void visit(FuncCallNoArgs procCall) {
+		Obj func = procCall.getDesignator().obj;
+		if (Obj.Meth == func.getKind()) {
+			report_info("Pronadjen poziv funkcije " + func.getName(), procCall);
+		} else {
+			report_error("Ime " + func.getName() + " nije funkcija!", procCall);
+		}
+	}
+
+	public void visit(FuncCallWithArgs funcCall) {
+		Obj fun = funcCall.getDesignator().obj;
+		Obj args = funcCall.getActPars().obj;
+
+		// da li da proveravam da li je vec definisana metoda?
+
+		if (fun.getKind() != Obj.Meth) {
+			report_error("Simbol " + fun.getName() + " nije metoda", funcCall);
+		} else {
+			// nece uci u ovaj if
+			if (fun.getName().equals("main")) {
+				report_error("Nije dozvoljeno pozivati main funkciju", funcCall);
+			} else {
+				// da li se slaze poziv funkcije sa deklaracijom ???
+				if (args.getLevel() != fun.getLevel()) {
+					report_error("Broj parametara u deklaraciji i pozivu funkcije se ne podudara", funcCall);
+					argsStack.clear();
+				} else {
+					Collection<Obj> formalArgs = fun.getLocalSymbols();
+					for (Iterator iterator = formalArgs.iterator(); iterator.hasNext();) {
+						Obj objFormal = (Obj) iterator.next();
+						Obj objActual = argsStack.pop();
+						if (!objFormal.getType().assignableTo(objActual.getType())) {
+							report_error("Pogresan tip parametra kod argumenta " + objActual.getName()
+									+ ": ocekuje se tip " + objFormal.getType() + ", a ne " + objActual.getType(),
+									funcCall);
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	public void visit(ActParsExpr expr) {
+		Obj o = new Obj(Obj.Meth, "ActualParameters", Tab.noType);
+		o.setLevel(1);
+		Obj par = new Obj(Obj.Var, "Parameter", expr.getExpr().struct);
+		argsStack.push(par);
+		expr.obj = o;
+	}
+
+	public void visit(ActParsList list) {
+		Obj o = list.getActPars().obj;
+		o.setLevel(o.getLevel() + 1);
+		Obj par = new Obj(Obj.Var, "Parameter", list.getExpr().struct);
+		argsStack.push(par);
+		list.obj = o;
+	}
+
+	/****************************************************
+	 * Deklaracije
+	 */
+
+	public void visit(FormParVar formPar) {
+		if (Tab.currentScope().findSymbol(formPar.getI2()) != null) {
+			report_error("Parametar " + formPar.getI2() + " sa istim nazivom je vec deklarisan u potpisu funkcije",
+					formPar);
+		} else {
+			int level = currentMethod.getLevel();
+			Obj obj = Tab.insert(Obj.Var, formPar.getI2(), formPar.getType().struct);
+			obj.setFpPos(level);
+			currentMethod.setLevel(level + 1);
+		}
+	}
+
+	public void visit(FormParArr formPar) {
+		if (Tab.currentScope().findSymbol(formPar.getI2()) != null) {
+			report_error("Parametar " + formPar.getI2() + " sa istim nazivom je vec deklarisan u potpisu funkcije",
+					formPar);
+		} else {
+			int level = currentMethod.getLevel();
+			Obj obj = Tab.insert(Obj.Var, formPar.getI2(), formPar.getType().struct);
+			obj.setFpPos(level);
+			currentMethod.setLevel(level + 1);
+		}
+	}
+
+	public boolean passed() {
+		return !errorDetected;
+	}
+
+}

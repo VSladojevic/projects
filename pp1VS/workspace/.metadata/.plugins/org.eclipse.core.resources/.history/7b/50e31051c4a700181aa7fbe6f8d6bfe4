@@ -1,0 +1,16 @@
+program MJProgram {
+
+
+int foo(int k) {
+	return k+5;
+}
+
+void foo2() {
+	print('a');
+}
+
+void main() int x[][]; {
+	
+}
+
+}

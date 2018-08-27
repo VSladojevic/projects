@@ -1,0 +1,115 @@
+// generated with ast extension for cup
+// version 0.8
+// 24/7/2018 19:25:21
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public interface Visitor { 
+
+    public void visit(Mulop Mulop);
+    public void visit(StatementList StatementList);
+    public void visit(ConstName ConstName);
+    public void visit(ClassName ClassName);
+    public void visit(Addop Addop);
+    public void visit(FormParsMaybe FormParsMaybe);
+    public void visit(DeclPart DeclPart);
+    public void visit(MethodReturn MethodReturn);
+    public void visit(MethodDeclBrace MethodDeclBrace);
+    public void visit(Factor Factor);
+    public void visit(VarList VarList);
+    public void visit(ConstList ConstList);
+    public void visit(DeclList DeclList);
+    public void visit(Designator Designator);
+    public void visit(Term Term);
+    public void visit(VarSingle VarSingle);
+    public void visit(VarDeclList VarDeclList);
+    public void visit(Expr Expr);
+    public void visit(ActPars ActPars);
+    public void visit(DesignatorStatement DesignatorStatement);
+    public void visit(Statement Statement);
+    public void visit(VarDecl VarDecl);
+    public void visit(FormPar FormPar);
+    public void visit(MethodDeclList MethodDeclList);
+    public void visit(ExprExpanded ExprExpanded);
+    public void visit(FormPars FormPars);
+    public void visit(TermExpanded TermExpanded);
+    public void visit(FactorDesignator FactorDesignator);
+    public void visit(FactorFunc FactorFunc);
+    public void visit(FactorProc FactorProc);
+    public void visit(FactorNewArrayElem FactorNewArrayElem);
+    public void visit(FactorBoolean FactorBoolean);
+    public void visit(FactorExpr FactorExpr);
+    public void visit(FactorCharacter FactorCharacter);
+    public void visit(FactorNumber FactorNumber);
+    public void visit(Mod Mod);
+    public void visit(Div Div);
+    public void visit(Mul Mul);
+    public void visit(TermMulop TermMulop);
+    public void visit(TermFactor TermFactor);
+    public void visit(Minus Minus);
+    public void visit(Plus Plus);
+    public void visit(TermExp TermExp);
+    public void visit(MinusTermExp MinusTermExp);
+    public void visit(ExprAddop ExprAddop);
+    public void visit(Expr1 Expr1);
+    public void visit(DesignArr DesignArr);
+    public void visit(DesignNoArr DesignNoArr);
+    public void visit(ActParsExpr ActParsExpr);
+    public void visit(ActParsList ActParsList);
+    public void visit(FuncCallWithArgs FuncCallWithArgs);
+    public void visit(FuncCallNoArgs FuncCallNoArgs);
+    public void visit(DesignatorDec DesignatorDec);
+    public void visit(DesignatorInc DesignatorInc);
+    public void visit(DesignatorEqual DesignatorEqual);
+    public void visit(ExprExpanded2 ExprExpanded2);
+    public void visit(ExprExpanded1 ExprExpanded1);
+    public void visit(ReturnExprStatement ReturnExprStatement);
+    public void visit(ReturnEmptyStatement ReturnEmptyStatement);
+    public void visit(PrintStatement PrintStatement);
+    public void visit(ReadStatement ReadStatement);
+    public void visit(Statement1 Statement1);
+    public void visit(EpsilonStatementList EpsilonStatementList);
+    public void visit(StatList StatList);
+    public void visit(FormParArr FormParArr);
+    public void visit(FormParVar FormParVar);
+    public void visit(FormParametersPart FormParametersPart);
+    public void visit(FormParameters FormParameters);
+    public void visit(EpsilonFormParsMaybe EpsilonFormParsMaybe);
+    public void visit(FormParametersMaybe FormParametersMaybe);
+    public void visit(MethodReturnVoid MethodReturnVoid);
+    public void visit(MethodReturnType MethodReturnType);
+    public void visit(MethodTypeName MethodTypeName);
+    public void visit(MethodDecl MethodDecl);
+    public void visit(EpsilonMethodDeclList EpsilonMethodDeclList);
+    public void visit(MethodDeclarationList MethodDeclarationList);
+    public void visit(EpsilonMethodDeclBrace EpsilonMethodDeclBrace);
+    public void visit(MethodDeclarationBrace MethodDeclarationBrace);
+    public void visit(ClassInside ClassInside);
+    public void visit(ClasNameExtends ClasNameExtends);
+    public void visit(ClasName ClasName);
+    public void visit(ClassDecl ClassDecl);
+    public void visit(VarArrayDecl VarArrayDecl);
+    public void visit(Var Var);
+    public void visit(VariablePart VariablePart);
+    public void visit(VariableList VariableList);
+    public void visit(VarListDecl VarListDecl);
+    public void visit(EpsilonVarDeclList EpsilonVarDeclList);
+    public void visit(VariableDeclList VariableDeclList);
+    public void visit(BooleanConst BooleanConst);
+    public void visit(CharacterConst CharacterConst);
+    public void visit(NumberConst NumberConst);
+    public void visit(ConstSingle ConstSingle);
+    public void visit(ConstantPart ConstantPart);
+    public void visit(ConstantList ConstantList);
+    public void visit(Type Type);
+    public void visit(ConstDecl ConstDecl);
+    public void visit(ClassDeclPart ClassDeclPart);
+    public void visit(VarDeclPart VarDeclPart);
+    public void visit(ConstDeclPart ConstDeclPart);
+    public void visit(EpsilonDeclList EpsilonDeclList);
+    public void visit(DeclarationList DeclarationList);
+    public void visit(ProgName ProgName);
+    public void visit(Program Program);
+
+}

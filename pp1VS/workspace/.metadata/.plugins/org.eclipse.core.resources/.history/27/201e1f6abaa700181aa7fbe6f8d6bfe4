@@ -1,0 +1,120 @@
+INFO  15:09:23,364 - Compiling source file: C:\pp1VS\workspace\MJCompiler\test\program.mj
+INFO  15:09:23,457 - #22 program
+INFO  15:09:23,457 - #19 MJProgram
+INFO  15:09:23,457 - #25 const
+INFO  15:09:23,460 - #19 int
+INFO  15:09:23,460 - #19 a
+INFO  15:09:23,461 - #28 =
+INFO  15:09:23,461 - #18 5
+INFO  15:09:23,461 - #27 ,
+INFO  15:09:23,463 - #19 b
+INFO  15:09:23,463 - #28 =
+INFO  15:09:23,464 - #18 7
+INFO  15:09:23,464 - #26 ;
+INFO  15:09:23,464 - #25 const
+INFO  15:09:23,466 - #19 int
+INFO  15:09:23,467 - #19 c
+INFO  15:09:23,467 - #28 =
+INFO  15:09:23,468 - #18 8
+INFO  15:09:23,468 - #26 ;
+INFO  15:09:23,468 - #25 const
+INFO  15:09:23,469 - #19 char
+INFO  15:09:23,469 - #19 x
+INFO  15:09:23,470 - #28 =
+INFO  15:09:23,471 - #21 a
+INFO  15:09:23,471 - #26 ;
+INFO  15:09:23,472 - #19 int
+INFO  15:09:23,472 - #19 x
+INFO  15:09:23,472 - #26 ;
+INFO  15:09:23,473 - #19 int
+INFO  15:09:23,474 - #19 y
+INFO  15:09:23,474 - #26 ;
+INFO  15:09:23,474 - #19 int
+INFO  15:09:23,474 - #19 a1
+INFO  15:09:23,475 - #29 [
+INFO  15:09:23,475 - #30 ]
+INFO  15:09:23,475 - #26 ;
+INFO  15:09:23,476 - #33 class
+INFO  15:09:23,476 - #19 X
+INFO  15:09:23,476 - #23 {
+INFO  15:09:23,477 - #24 }
+INFO  15:09:23,481 - #23 {
+INFO  15:09:23,484 - #19 int
+INFO  15:09:23,485 - #19 k
+INFO  15:09:23,485 - #31 (
+INFO  15:09:23,487 - #32 )
+INFO  15:09:23,489 - #19 int
+INFO  15:09:23,489 - #19 c
+INFO  15:09:23,490 - #26 ;
+INFO  15:09:23,490 - #23 {
+INFO  15:09:23,491 - #19 c
+INFO  15:09:23,492 - #28 =
+INFO  15:09:23,492 - #18 1
+INFO  15:09:23,493 - #26 ;
+INFO  15:09:23,495 - #37 print
+INFO  15:09:23,497 - #31 (
+INFO  15:09:23,497 - #19 c
+INFO  15:09:23,498 - #32 )
+INFO  15:09:23,498 - #26 ;
+INFO  15:09:23,498 - #14 return
+INFO  15:09:23,499 - #19 c
+INFO  15:09:23,499 - #41 +
+INFO  15:09:23,500 - #18 2
+INFO  15:09:23,502 - #26 ;
+INFO  15:09:23,503 - #24 }
+INFO  15:09:23,503 - #19 int
+INFO  15:09:23,506 - #19 main
+INFO  15:09:23,506 - #31 (
+INFO  15:09:23,506 - #32 )
+INFO  15:09:23,507 - #23 {
+INFO  15:09:23,510 - #19 y
+INFO  15:09:23,510 - #28 =
+INFO  15:09:23,511 - #18 2
+INFO  15:09:23,511 - #26 ;
+INFO  15:09:23,511 - #19 x
+INFO  15:09:23,511 - #28 =
+INFO  15:09:23,511 - #19 y
+INFO  15:09:23,512 - #41 +
+INFO  15:09:23,514 - #18 2
+INFO  15:09:23,514 - #26 ;
+INFO  15:09:23,514 - #19 y
+INFO  15:09:23,515 - #28 =
+INFO  15:09:23,515 - #19 k
+INFO  15:09:23,517 - #31 (
+INFO  15:09:23,518 - #32 )
+INFO  15:09:23,518 - #41 +
+INFO  15:09:23,520 - #18 3
+INFO  15:09:23,520 - #26 ;
+INFO  15:09:23,521 - #37 print
+INFO  15:09:23,521 - #31 (
+INFO  15:09:23,522 - #19 y
+INFO  15:09:23,522 - #32 )
+INFO  15:09:23,523 - #26 ;
+INFO  15:09:23,523 - #14 return
+INFO  15:09:23,524 - #18 0
+INFO  15:09:23,524 - #26 ;
+INFO  15:09:23,524 - #24 }
+INFO  15:09:23,524 - #24 }
+ERROR 15:09:23,550 - Greska - Doslo je do nepoklapanja tipa pri dodeli konstanti: x na liniji 4
+INFO  15:09:23,550 - Deklarisanje promenljive x
+INFO  15:09:23,550 - Deklarisanje promenljive y
+INFO  15:09:23,550 - Deklarisanje niza a1
+INFO  15:09:23,551 - Obradjuje se funkcija k na liniji 10
+INFO  15:09:23,551 - Deklarisanje promenljive c
+INFO  15:09:23,552 - Konstanta/Simbol Var c: int, 0, 1  na liniji 11
+INFO  15:09:23,552 - Konstanta/Simbol Var c: int, 0, 1  na liniji 12
+INFO  15:09:23,552 - Konstanta/Simbol Var c: int, 0, 1  na liniji 13
+INFO  15:09:23,552 - Obradjuje se funkcija main na liniji 16
+ERROR 15:09:23,552 - Funkcija sa nazivom main mora biti tipa void
+ERROR 15:09:23,553 - Funkcija sa nazivom main mora biti bez argumenata
+INFO  15:09:23,553 - Konstanta/Simbol Var y: int, 1, 0  na liniji 17
+INFO  15:09:23,553 - Konstanta/Simbol Var x: int, 0, 0  na liniji 18
+INFO  15:09:23,553 - Konstanta/Simbol Var y: int, 1, 0  na liniji 18
+INFO  15:09:23,553 - Konstanta/Simbol Var y: int, 1, 0  na liniji 19
+INFO  15:09:23,554 - Metoda Meth k: int, 0, 0 
+   Var c: int, 0, 1 
+ na liniji 19
+ERROR 15:09:23,554 - Term i mulop moraju oba biti tipa int na liniji 19
+ERROR 15:09:23,554 - Greska na liniji 19: izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli
+INFO  15:09:23,554 - Konstanta/Simbol Var y: int, 1, 0  na liniji 20
+INFO  15:09:23,555 - Print calls = 2

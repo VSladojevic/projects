@@ -1,0 +1,15 @@
+program MJProgram
+	int noviInt;
+{
+	void main() bool b[];
+	{
+		if(noviInt > 'c')
+			noviInt = 0;
+		
+		if(b >= b){
+			noviInt = 1;	
+		}
+		
+		do print(1); while(pera != zdera);
+	}
+}

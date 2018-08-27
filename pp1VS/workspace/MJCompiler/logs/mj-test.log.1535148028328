@@ -1,0 +1,5 @@
+ERROR 00:00:11,005 - Sintaksna greska na liniji 2
+ERROR 00:00:11,070 - Sintaksna greska na liniji 11
+ERROR 00:00:11,136 - Sintaksna greska na liniji 15
+ERROR 00:00:11,136 - Sintaksna greska na liniji 19
+ERROR 00:00:11,137 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 19

@@ -1,0 +1,19 @@
+program MJProgram
+	int a, b, c d e, f; 				//sintaksna greska 
+
+{
+	int foo (int a, bool b) int c, niz[]; {
+		niz = new int[3];
+		niz[0] = c;
+		print(niz[0]);
+		read(niz[1]);
+		read(niz[2]);
+		c = char c;							//sintaksna greska oporavak do ;
+		return c+3;
+	}
+	
+	void main()
+	{
+		
+	}
+}

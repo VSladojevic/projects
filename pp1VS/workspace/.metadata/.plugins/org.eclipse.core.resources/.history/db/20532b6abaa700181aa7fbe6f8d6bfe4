@@ -1,0 +1,27 @@
+INFO  15:05:00,853 - Compiling source file: C:\pp1VS\workspace\MJCompiler\test\program.mj
+INFO  15:05:00,981 - #22 program
+INFO  15:05:00,982 - #19 MJProgram
+INFO  15:05:00,982 - #23 {
+INFO  15:05:00,989 - #35 void
+INFO  15:05:00,991 - #19 main
+INFO  15:05:00,992 - #31 (
+INFO  15:05:00,994 - #32 )
+INFO  15:05:00,995 - #23 {
+INFO  15:05:00,997 - #19 y
+INFO  15:05:00,999 - #28 =
+INFO  15:05:00,999 - #18 2
+INFO  15:05:00,999 - #26 ;
+INFO  15:05:01,001 - #26 ;
+INFO  15:05:01,002 - #19 x
+INFO  15:05:01,003 - #28 =
+INFO  15:05:01,004 - #19 y
+INFO  15:05:01,004 - #41 +
+INFO  15:05:01,005 - #18 2
+INFO  15:05:01,007 - #26 ;
+INFO  15:05:01,008 - #19 y
+ERROR 15:05:01,008 - 
+Sintaksna greska na liniji 9
+ERROR 15:05:01,008 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 9
+ERROR 15:05:01,038 - Greska na liniji 8: promenljiva nije prethodno definsana
+ERROR 15:05:01,038 - Term i mulop moraju oba biti tipa int na liniji 8
+INFO  15:05:01,038 - Print calls = 0

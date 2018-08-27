@@ -1,0 +1,96 @@
+// generated with ast extension for cup
+// version 0.8
+// 24/7/2018 0:2:51
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class ClassDecl implements SyntaxNode {
+
+    private SyntaxNode parent;
+    private int line;
+    private ClassName ClassName;
+    private ClassInside ClassInside;
+
+    public ClassDecl (ClassName ClassName, ClassInside ClassInside) {
+        this.ClassName=ClassName;
+        if(ClassName!=null) ClassName.setParent(this);
+        this.ClassInside=ClassInside;
+        if(ClassInside!=null) ClassInside.setParent(this);
+    }
+
+    public ClassName getClassName() {
+        return ClassName;
+    }
+
+    public void setClassName(ClassName ClassName) {
+        this.ClassName=ClassName;
+    }
+
+    public ClassInside getClassInside() {
+        return ClassInside;
+    }
+
+    public void setClassInside(ClassInside ClassInside) {
+        this.ClassInside=ClassInside;
+    }
+
+    public SyntaxNode getParent() {
+        return parent;
+    }
+
+    public void setParent(SyntaxNode parent) {
+        this.parent=parent;
+    }
+
+    public int getLine() {
+        return line;
+    }
+
+    public void setLine(int line) {
+        this.line=line;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(ClassName!=null) ClassName.accept(visitor);
+        if(ClassInside!=null) ClassInside.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(ClassName!=null) ClassName.traverseTopDown(visitor);
+        if(ClassInside!=null) ClassInside.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(ClassName!=null) ClassName.traverseBottomUp(visitor);
+        if(ClassInside!=null) ClassInside.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("ClassDecl(\n");
+
+        if(ClassName!=null)
+            buffer.append(ClassName.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(ClassInside!=null)
+            buffer.append(ClassInside.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [ClassDecl]");
+        return buffer.toString();
+    }
+}

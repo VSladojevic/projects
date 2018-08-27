@@ -1,0 +1,7 @@
+ERROR 00:04:22,505 - Sintaksna greska na liniji 3
+ERROR 00:04:22,510 - Sintaksna greska na liniji 4
+ERROR 00:04:22,563 - Promenljiva a nije prethodno definsana na liniji 15
+ERROR 00:04:22,565 - Pogresan tip argumenta na liniji 15
+ERROR 00:04:22,565 - Promenljiva c nije prethodno definsana na liniji 16
+ERROR 00:04:22,565 - Print moze primati samo int, char i bool tipove na liniji 16
+ERROR 00:04:22,570 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,110 @@
+INFO  16:05:34,974 - Compiling source file: C:\pp1VS\workspace\MJCompiler\test\program.mj
+INFO  16:05:35,036 - #22 program
+INFO  16:05:35,036 - #19 MJProgram
+INFO  16:05:35,036 - #25 const
+INFO  16:05:35,036 - #19 int
+INFO  16:05:35,036 - #19 a
+INFO  16:05:35,052 - #28 =
+INFO  16:05:35,053 - #18 5
+INFO  16:05:35,053 - #27 ,
+INFO  16:05:35,054 - #19 b
+INFO  16:05:35,054 - #28 =
+INFO  16:05:35,054 - #18 7
+INFO  16:05:35,054 - #26 ;
+INFO  16:05:35,055 - #25 const
+INFO  16:05:35,056 - #19 int
+INFO  16:05:35,056 - #19 c
+INFO  16:05:35,056 - #28 =
+INFO  16:05:35,056 - #18 8
+INFO  16:05:35,056 - #26 ;
+INFO  16:05:35,056 - #25 const
+INFO  16:05:35,057 - #19 char
+INFO  16:05:35,057 - #19 x
+INFO  16:05:35,057 - #28 =
+INFO  16:05:35,058 - #21 a
+INFO  16:05:35,058 - #26 ;
+INFO  16:05:35,058 - #19 int
+INFO  16:05:35,058 - #19 y
+INFO  16:05:35,058 - #26 ;
+INFO  16:05:35,059 - #19 int
+INFO  16:05:35,059 - #19 a1
+INFO  16:05:35,059 - #29 [
+INFO  16:05:35,059 - #30 ]
+INFO  16:05:35,059 - #26 ;
+INFO  16:05:35,059 - #33 class
+INFO  16:05:35,059 - #19 X
+INFO  16:05:35,059 - #23 {
+INFO  16:05:35,059 - #24 }
+INFO  16:05:35,059 - #23 {
+INFO  16:05:35,059 - #19 int
+INFO  16:05:35,059 - #19 k
+INFO  16:05:35,059 - #31 (
+INFO  16:05:35,059 - #32 )
+INFO  16:05:35,059 - #19 int
+INFO  16:05:35,059 - #19 c
+INFO  16:05:35,059 - #26 ;
+INFO  16:05:35,059 - #23 {
+INFO  16:05:35,059 - #19 c
+INFO  16:05:35,059 - #28 =
+INFO  16:05:35,059 - #18 1
+INFO  16:05:35,059 - #26 ;
+INFO  16:05:35,059 - #37 print
+INFO  16:05:35,059 - #31 (
+INFO  16:05:35,074 - #19 c
+INFO  16:05:35,074 - #32 )
+INFO  16:05:35,074 - #26 ;
+INFO  16:05:35,074 - #14 return
+INFO  16:05:35,074 - #19 c
+INFO  16:05:35,074 - #41 +
+INFO  16:05:35,074 - #18 2
+INFO  16:05:35,074 - #26 ;
+INFO  16:05:35,074 - #24 }
+INFO  16:05:35,074 - #35 void
+INFO  16:05:35,074 - #19 main
+INFO  16:05:35,074 - #31 (
+INFO  16:05:35,074 - #32 )
+INFO  16:05:35,074 - #23 {
+INFO  16:05:35,074 - #19 y
+INFO  16:05:35,074 - #28 =
+INFO  16:05:35,074 - #18 2
+INFO  16:05:35,074 - #26 ;
+INFO  16:05:35,074 - #19 y
+INFO  16:05:35,074 - #28 =
+INFO  16:05:35,074 - #19 y
+INFO  16:05:35,074 - #41 +
+INFO  16:05:35,074 - #18 2
+INFO  16:05:35,074 - #26 ;
+INFO  16:05:35,074 - #19 y
+INFO  16:05:35,074 - #28 =
+INFO  16:05:35,074 - #19 k
+INFO  16:05:35,074 - #31 (
+INFO  16:05:35,074 - #32 )
+INFO  16:05:35,074 - #41 +
+INFO  16:05:35,074 - #18 3
+INFO  16:05:35,074 - #26 ;
+INFO  16:05:35,074 - #37 print
+INFO  16:05:35,074 - #31 (
+INFO  16:05:35,074 - #19 y
+INFO  16:05:35,074 - #32 )
+INFO  16:05:35,074 - #26 ;
+INFO  16:05:35,074 - #24 }
+INFO  16:05:35,074 - #24 }
+INFO  16:05:35,105 - Deklarisanje promenljive y
+INFO  16:05:35,105 - Deklarisanje niza a1
+INFO  16:05:35,105 - Obradjuje se funkcija k na liniji 10
+INFO  16:05:35,105 - Deklarisanje promenljive c
+INFO  16:05:35,105 - Konstanta/Simbol Var c: int, 0, 1  na liniji 11
+INFO  16:05:35,105 - Konstanta/Simbol Var c: int, 0, 1  na liniji 12
+INFO  16:05:35,105 - Konstanta/Simbol Var c: int, 0, 1  na liniji 13
+INFO  16:05:35,105 - Obradjuje se funkcija main na liniji 16
+INFO  16:05:35,105 - Konstanta/Simbol Var y: int, 0, 0  na liniji 17
+INFO  16:05:35,105 - Konstanta/Simbol Var y: int, 0, 0  na liniji 18
+INFO  16:05:35,105 - Konstanta/Simbol Var y: int, 0, 0  na liniji 18
+INFO  16:05:35,105 - Konstanta/Simbol Var y: int, 0, 0  na liniji 19
+INFO  16:05:35,105 - Metoda Meth k: int, 0, 0 
+   Var c: int, 0, 1 
+ na liniji 19
+ERROR 16:05:35,105 - Term i mulop moraju oba biti tipa int na liniji 19
+ERROR 16:05:35,105 - Greska na liniji 19: izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli
+INFO  16:05:35,105 - Konstanta/Simbol Var y: int, 0, 0  na liniji 20
+INFO  16:05:35,105 - Print calls = 2

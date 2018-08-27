@@ -1,0 +1,26 @@
+program Test1
+
+const int a=55;
+const char c='a';
+
+{
+
+void main() int x,y; bool t; {
+	t=true;
+	
+	read(x);
+	read(y);
+	
+	print(x+y);
+	x=ord(c);
+	
+	print(y++);
+	
+	print(chr(a));
+	
+	t=false;
+
+}
+
+
+}

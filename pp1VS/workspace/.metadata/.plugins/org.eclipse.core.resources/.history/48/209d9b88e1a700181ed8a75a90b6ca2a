@@ -1,0 +1,19 @@
+// Test301
+
+program test301
+
+{
+
+void foo(int x, int y) {
+print(x);
+print(y);
+}
+	void main()	int bodovi;
+	{
+		foo(4,5);
+			
+	
+	}
+}
+
+

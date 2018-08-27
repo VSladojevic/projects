@@ -1,0 +1,96 @@
+// generated with ast extension for cup
+// version 0.8
+// 20/7/2018 20:38:25
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public interface Visitor { 
+
+    public void visit(Mulop Mulop);
+    public void visit(ConstName ConstName);
+    public void visit(ClassName ClassName);
+    public void visit(Addop Addop);
+    public void visit(DeclPart DeclPart);
+    public void visit(MethodReturn MethodReturn);
+    public void visit(Factor Factor);
+    public void visit(VarSingle VarSingle);
+    public void visit(Expr Expr);
+    public void visit(DesignatorStatement DesignatorStatement);
+    public void visit(Statement Statement);
+    public void visit(ExprExpanded ExprExpanded);
+    public void visit(FactorDesignator FactorDesignator);
+    public void visit(FactorNewExpr FactorNewExpr);
+    public void visit(FactorNew FactorNew);
+    public void visit(FactorBoolean FactorBoolean);
+    public void visit(FactorExpr FactorExpr);
+    public void visit(FactorCharacter FactorCharacter);
+    public void visit(FactorNumber FactorNumber);
+    public void visit(Mod Mod);
+    public void visit(Div Div);
+    public void visit(Mul Mul);
+    public void visit(ListMulopFactorDerived1 ListMulopFactorDerived1);
+    public void visit(ListMulopFactor ListMulopFactor);
+    public void visit(Term Term);
+    public void visit(Minus Minus);
+    public void visit(Plus Plus);
+    public void visit(ListAddopTermDerived1 ListAddopTermDerived1);
+    public void visit(ListAddopTerm ListAddopTerm);
+    public void visit(TermExpanded TermExpanded);
+    public void visit(MinusTermExpanded MinusTermExpanded);
+    public void visit(Expr2 Expr2);
+    public void visit(Expr1 Expr1);
+    public void visit(DesignatorSquared DesignatorSquared);
+    public void visit(Designator Designator);
+    public void visit(DesignatorStatement3 DesignatorStatement3);
+    public void visit(DesignatorStatement2 DesignatorStatement2);
+    public void visit(DesignatorStatement1 DesignatorStatement1);
+    public void visit(ExprExpanded2 ExprExpanded2);
+    public void visit(ExprExpanded1 ExprExpanded1);
+    public void visit(Statement4 Statement4);
+    public void visit(Statement3 Statement3);
+    public void visit(Statement2 Statement2);
+    public void visit(Statement1 Statement1);
+    public void visit(StatementListDerived1 StatementListDerived1);
+    public void visit(StatementList StatementList);
+    public void visit(SquareMaybeDerived1 SquareMaybeDerived1);
+    public void visit(SquareMaybe SquareMaybe);
+    public void visit(FormPar FormPar);
+    public void visit(FormParPart FormParPart);
+    public void visit(FormPars FormPars);
+    public void visit(FormParsMaybeDerived1 FormParsMaybeDerived1);
+    public void visit(FormParsMaybe FormParsMaybe);
+    public void visit(MethodReturnVoid MethodReturnVoid);
+    public void visit(MethodReturnType MethodReturnType);
+    public void visit(MethodDecl MethodDecl);
+    public void visit(MethodDeclListDerived1 MethodDeclListDerived1);
+    public void visit(MethodDeclList MethodDeclList);
+    public void visit(MethodDeclBraceDerived1 MethodDeclBraceDerived1);
+    public void visit(MethodDeclBrace MethodDeclBrace);
+    public void visit(ClassInside ClassInside);
+    public void visit(ClassNameExtends ClassNameExtends);
+    public void visit(ClasName ClasName);
+    public void visit(ClassDecl ClassDecl);
+    public void visit(VarSquared VarSquared);
+    public void visit(Var Var);
+    public void visit(VarPart VarPart);
+    public void visit(VarList VarList);
+    public void visit(VarDecl VarDecl);
+    public void visit(VarDeclListDerived1 VarDeclListDerived1);
+    public void visit(VarDeclList VarDeclList);
+    public void visit(Boolean Boolean);
+    public void visit(Character Character);
+    public void visit(Number Number);
+    public void visit(ConstSingle ConstSingle);
+    public void visit(ConstPart ConstPart);
+    public void visit(ConstList ConstList);
+    public void visit(Type Type);
+    public void visit(ConstDecl ConstDecl);
+    public void visit(ClassDeclPart ClassDeclPart);
+    public void visit(VarDeclPart VarDeclPart);
+    public void visit(ConstDeclPart ConstDeclPart);
+    public void visit(DeclListDerived1 DeclListDerived1);
+    public void visit(DeclList DeclList);
+    public void visit(Program Program);
+
+}

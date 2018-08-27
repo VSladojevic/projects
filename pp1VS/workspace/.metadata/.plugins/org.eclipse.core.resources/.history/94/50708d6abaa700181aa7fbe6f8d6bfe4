@@ -1,0 +1,106 @@
+INFO  00:35:32,430 - Compiling source file: C:\pp1VS\workspace\MJCompiler\test\program.mj
+INFO  00:35:32,562 - #22 program
+INFO  00:35:32,562 - #19 MJProgram
+INFO  00:35:32,563 - #25 const
+INFO  00:35:32,566 - #19 int
+INFO  00:35:32,567 - #19 a
+INFO  00:35:32,567 - #28 =
+INFO  00:35:32,567 - #18 5
+INFO  00:35:32,567 - #27 ,
+INFO  00:35:32,567 - #19 b
+INFO  00:35:32,567 - #28 =
+INFO  00:35:32,567 - #18 7
+INFO  00:35:32,567 - #26 ;
+INFO  00:35:32,567 - #25 const
+INFO  00:35:32,567 - #19 int
+INFO  00:35:32,567 - #19 c
+INFO  00:35:32,567 - #28 =
+INFO  00:35:32,567 - #18 8
+INFO  00:35:32,567 - #26 ;
+INFO  00:35:32,567 - #25 const
+INFO  00:35:32,567 - #19 char
+INFO  00:35:32,567 - #19 x
+INFO  00:35:32,567 - #28 =
+INFO  00:35:32,567 - #21 a
+INFO  00:35:32,567 - #26 ;
+INFO  00:35:32,583 - #19 int
+INFO  00:35:32,583 - #19 y
+INFO  00:35:32,583 - #26 ;
+INFO  00:35:32,583 - #19 int
+INFO  00:35:32,583 - #19 a1
+INFO  00:35:32,583 - #29 [
+INFO  00:35:32,583 - #30 ]
+INFO  00:35:32,583 - #26 ;
+INFO  00:35:32,583 - #33 class
+INFO  00:35:32,583 - #19 X
+INFO  00:35:32,583 - #23 {
+INFO  00:35:32,583 - #24 }
+INFO  00:35:32,583 - #23 {
+INFO  00:35:32,583 - #19 int
+INFO  00:35:32,598 - #19 k
+INFO  00:35:32,598 - #31 (
+INFO  00:35:32,598 - #32 )
+INFO  00:35:32,598 - #19 int
+INFO  00:35:32,598 - #19 c
+INFO  00:35:32,598 - #26 ;
+INFO  00:35:32,598 - #23 {
+INFO  00:35:32,598 - #19 c
+INFO  00:35:32,598 - #28 =
+INFO  00:35:32,598 - #18 1
+INFO  00:35:32,598 - #26 ;
+INFO  00:35:32,598 - #37 print
+INFO  00:35:32,614 - #31 (
+INFO  00:35:32,614 - #19 c
+INFO  00:35:32,614 - #32 )
+INFO  00:35:32,614 - #26 ;
+INFO  00:35:32,614 - #14 return
+INFO  00:35:32,614 - #19 c
+INFO  00:35:32,614 - #41 +
+INFO  00:35:32,614 - #18 2
+INFO  00:35:32,614 - #26 ;
+INFO  00:35:32,614 - #24 }
+INFO  00:35:32,614 - #35 void
+INFO  00:35:32,630 - #19 main
+INFO  00:35:32,630 - #31 (
+INFO  00:35:32,630 - #32 )
+INFO  00:35:32,630 - #23 {
+INFO  00:35:32,630 - #19 y
+INFO  00:35:32,630 - #28 =
+INFO  00:35:32,630 - #18 2
+INFO  00:35:32,630 - #26 ;
+INFO  00:35:32,645 - #19 y
+INFO  00:35:32,645 - #28 =
+INFO  00:35:32,645 - #19 y
+INFO  00:35:32,645 - #41 +
+INFO  00:35:32,645 - #18 2
+INFO  00:35:32,645 - #26 ;
+INFO  00:35:32,645 - #19 y
+INFO  00:35:32,645 - #28 =
+INFO  00:35:32,645 - #19 k
+INFO  00:35:32,645 - #31 (
+INFO  00:35:32,645 - #32 )
+INFO  00:35:32,645 - #41 +
+INFO  00:35:32,645 - #18 3
+INFO  00:35:32,645 - #26 ;
+INFO  00:35:32,645 - #37 print
+INFO  00:35:32,645 - #31 (
+INFO  00:35:32,645 - #19 y
+INFO  00:35:32,645 - #32 )
+INFO  00:35:32,645 - #26 ;
+INFO  00:35:32,645 - #24 }
+INFO  00:35:32,645 - #24 }
+INFO  00:35:32,686 - Deklarisanje promenljive y na liniji 5
+INFO  00:35:32,687 - Deklarisanje niza a1 na liniji 6
+INFO  00:35:32,689 - Obradjuje se funkcija k na liniji 10
+INFO  00:35:32,690 - Deklarisanje promenljive c na liniji 10
+INFO  00:35:32,691 - Konstanta/Simbol c na liniji 11
+INFO  00:35:32,692 - Konstanta/Simbol c na liniji 12
+INFO  00:35:32,692 - Konstanta/Simbol c na liniji 13
+INFO  00:35:32,693 - Obradjuje se funkcija main na liniji 16
+INFO  00:35:32,693 - Konstanta/Simbol y na liniji 17
+INFO  00:35:32,693 - Konstanta/Simbol y na liniji 18
+INFO  00:35:32,696 - Konstanta/Simbol y na liniji 18
+INFO  00:35:32,696 - Konstanta/Simbol y na liniji 19
+INFO  00:35:32,696 - Metoda k na liniji 19
+INFO  00:35:32,697 - Konstanta/Simbol y na liniji 20
+INFO  00:35:32,697 - Print calls = 2

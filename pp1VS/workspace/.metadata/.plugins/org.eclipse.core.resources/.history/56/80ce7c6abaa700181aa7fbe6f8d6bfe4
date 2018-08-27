@@ -1,0 +1,26 @@
+INFO  01:32:22,387 - Compiling source file: C:\pp1VS\workspace\MJCompiler\test\program.mj
+INFO  01:32:22,551 - #22 program
+INFO  01:32:22,552 - #19 MJProgram
+INFO  01:32:22,552 - #23 {
+INFO  01:32:22,557 - #35 void
+INFO  01:32:22,559 - #19 main
+INFO  01:32:22,561 - #31 (
+INFO  01:32:22,563 - #32 )
+INFO  01:32:22,566 - #19 int
+INFO  01:32:22,567 - #19 x
+INFO  01:32:22,569 - #27 ,
+INFO  01:32:22,570 - #19 a
+INFO  01:32:22,570 - #26 ;
+INFO  01:32:22,571 - #23 {
+INFO  01:32:22,572 - #37 print
+INFO  01:32:22,574 - #31 (
+INFO  01:32:22,574 - #19 x
+INFO  01:32:22,574 - #32 )
+INFO  01:32:22,577 - #26 ;
+INFO  01:32:22,577 - #24 }
+INFO  01:32:22,578 - #24 }
+INFO  01:32:22,640 - Obradjuje se funkcija main na liniji 3
+INFO  01:32:22,642 - Deklarisanje promenljive x na liniji 3
+INFO  01:32:22,643 - Deklarisanje promenljive a na liniji 3
+INFO  01:32:22,643 - Konstanta/Simbol x na liniji 5
+INFO  01:32:22,644 - Print calls = 1

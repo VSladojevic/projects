@@ -1,0 +1,78 @@
+// generated with ast extension for cup
+// version 0.8
+// 23/7/2018 1:38:26
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class Expr1 extends Expr {
+
+    private TermExpanded TermExpanded;
+    private ListAddopTerm ListAddopTerm;
+
+    public Expr1 (TermExpanded TermExpanded, ListAddopTerm ListAddopTerm) {
+        this.TermExpanded=TermExpanded;
+        if(TermExpanded!=null) TermExpanded.setParent(this);
+        this.ListAddopTerm=ListAddopTerm;
+        if(ListAddopTerm!=null) ListAddopTerm.setParent(this);
+    }
+
+    public TermExpanded getTermExpanded() {
+        return TermExpanded;
+    }
+
+    public void setTermExpanded(TermExpanded TermExpanded) {
+        this.TermExpanded=TermExpanded;
+    }
+
+    public ListAddopTerm getListAddopTerm() {
+        return ListAddopTerm;
+    }
+
+    public void setListAddopTerm(ListAddopTerm ListAddopTerm) {
+        this.ListAddopTerm=ListAddopTerm;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(TermExpanded!=null) TermExpanded.accept(visitor);
+        if(ListAddopTerm!=null) ListAddopTerm.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(TermExpanded!=null) TermExpanded.traverseTopDown(visitor);
+        if(ListAddopTerm!=null) ListAddopTerm.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(TermExpanded!=null) TermExpanded.traverseBottomUp(visitor);
+        if(ListAddopTerm!=null) ListAddopTerm.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("Expr1(\n");
+
+        if(TermExpanded!=null)
+            buffer.append(TermExpanded.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(ListAddopTerm!=null)
+            buffer.append(ListAddopTerm.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [Expr1]");
+        return buffer.toString();
+    }
+}

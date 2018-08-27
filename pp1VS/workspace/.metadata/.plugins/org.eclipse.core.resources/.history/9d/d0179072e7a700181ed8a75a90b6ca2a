@@ -1,0 +1,11 @@
+ERROR 18:57:03,391 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 25
+ERROR 18:57:03,395 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 26
+ERROR 18:57:03,395 - Term i mulop moraju oba biti tipa int na liniji 27
+ERROR 18:57:03,396 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 27
+ERROR 18:57:03,396 - Print moze primati samo int, char i bool tipove na liniji 29
+ERROR 18:57:03,397 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 33
+ERROR 18:57:03,397 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 34
+ERROR 18:57:03,398 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 35
+ERROR 18:57:03,400 - Print moze primati samo int, char i bool tipove na liniji 36
+ERROR 18:57:03,400 - Print moze primati samo int, char i bool tipove na liniji 37
+ERROR 18:57:03,406 - Parsiranje NIJE uspesno zavrseno!

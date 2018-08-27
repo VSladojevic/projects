@@ -1,0 +1,11 @@
+INFO  01:32:59,262 - Compiling source file: C:\pp1VS\workspace\MJCompiler\test\program.mj
+INFO  01:32:59,344 - #22 program
+INFO  01:32:59,344 - #19 MJProgram
+INFO  01:32:59,344 - #19 const
+INFO  01:32:59,347 - #19 int
+INFO  01:32:59,350 - #19 a
+ERROR 01:32:59,350 - 
+Sintaksna greska na liniji 2
+ERROR 01:32:59,350 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 2
+ERROR 01:32:59,366 - Nije pronadjen tip const u tabeli simbola
+INFO  01:32:59,366 - Print calls = 0

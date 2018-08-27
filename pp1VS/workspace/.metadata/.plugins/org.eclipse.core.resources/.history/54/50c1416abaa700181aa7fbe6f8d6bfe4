@@ -1,0 +1,27 @@
+INFO  01:25:28,975 - Compiling source file: C:\pp1VS\workspace\MJCompiler\test\program.mj
+INFO  01:25:29,100 - #22 program
+INFO  01:25:29,101 - #19 MJProgram
+INFO  01:25:29,101 - #19 int
+INFO  01:25:29,104 - #19 noviInt
+INFO  01:25:29,106 - #26 ;
+INFO  01:25:29,107 - #23 {
+INFO  01:25:29,108 - #35 void
+INFO  01:25:29,111 - #19 main
+INFO  01:25:29,113 - #31 (
+INFO  01:25:29,115 - #32 )
+INFO  01:25:29,118 - #19 bool
+INFO  01:25:29,119 - #19 b
+INFO  01:25:29,120 - #29 [
+INFO  01:25:29,120 - #30 ]
+INFO  01:25:29,120 - #27 ,
+INFO  01:25:29,121 - #19 a
+INFO  01:25:29,121 - #26 ;
+INFO  01:25:29,122 - #23 {
+INFO  01:25:29,123 - #24 }
+INFO  01:25:29,125 - #24 }
+INFO  01:25:29,166 - Deklarisanje promenljive noviInt na liniji 2
+INFO  01:25:29,167 - Obradjuje se funkcija main na liniji 4
+ERROR 01:25:29,168 - Funkcija sa nazivom main mora biti bez argumenata na liniji 4
+INFO  01:25:29,168 - Deklarisanje niza b na liniji 4
+INFO  01:25:29,169 - Deklarisanje promenljive a na liniji 4
+INFO  01:25:29,169 - Print calls = 0

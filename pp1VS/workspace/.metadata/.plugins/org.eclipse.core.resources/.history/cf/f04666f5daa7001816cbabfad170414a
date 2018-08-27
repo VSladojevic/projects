@@ -1,0 +1,21 @@
+program MJProgram
+	int c, x, s d y, noviInt; 				//sintaksna greska oporavak do ,
+	bool b = true;							//sintaksna greska oporavak do ;
+	char cc = 2, cbc, ccc = l;				//sintaksna greska oporavak do , i ;
+	int y, char c, a;  						//sintaksna greska oporavak do ,
+{
+	int k (int i, bool b) int c, niz[]; {
+		print(b,20);
+		niz = new int[3];
+		niz[0] = i;
+		niz[0] = 1++ + niz[0];  			//sintaksna greska oporavak do ;
+		niz[0]--;
+		print(niz[0]);
+		read(niz[1]);
+		print(niz[1]);
+		c = char c;							//sintaksna greska oporavak do ;
+		return c+3;
+	}
+	
+	
+}

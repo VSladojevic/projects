@@ -1,0 +1,27 @@
+program Test2
+
+int niz[];
+{
+
+int foo(int a, int b, int c) {
+	return a+b+c;
+}
+
+void main() int x,y; bool t; {
+	
+	print('a',7);
+	
+	read(x);
+	niz=new int[2];
+	niz[0]=x;
+	niz[1] = 7%3 + 2 + 15/5;
+	
+	y=niz[1];
+	
+	print(foo(niz[0],niz[1],y));
+	
+	y=foo(1,2,3);
+}
+
+
+}

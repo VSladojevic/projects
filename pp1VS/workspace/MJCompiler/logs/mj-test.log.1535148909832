@@ -1,0 +1,7 @@
+ERROR 00:14:58,337 - Promenljiva foo nije prethodno definsana na liniji 18
+ERROR 00:14:58,339 - Simbol noObj nije metoda na liniji 18
+ERROR 00:14:58,339 - Print moze primati samo int, char i bool tipove na liniji 18
+ERROR 00:14:58,339 - Promenljiva foo nije prethodno definsana na liniji 20
+ERROR 00:14:58,341 - Simbol noObj nije metoda na liniji 20
+ERROR 00:14:58,341 - Izrazi sa leve i desne strane jednakosti nisu kompatibilni pri dodeli na liniji 20
+ERROR 00:14:58,343 - Parsiranje NIJE uspesno zavrseno!

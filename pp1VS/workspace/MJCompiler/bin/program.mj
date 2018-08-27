@@ -1,0 +1,22 @@
+//Test 302
+
+program test302
+
+int niz[];
+{
+	
+	int fact(int z)
+	{
+		return z!;
+	}
+	
+	
+	void main() int x;
+	{
+
+		read(x);
+		print(fact(x));			
+			
+	}
+}
+
