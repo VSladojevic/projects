@@ -1,0 +1,27 @@
+Cech	£ 5.5	124	Arsenal
+Courtois	£ 5.5	136	Chelsea
+Ederson	£ 5.5	158	Man City
+De Gea	£ 5.5	172	Man Utd
+Lloris	£ 5.5	144	Spurs
+Pickford	£ 5.0	145	Everton
+Schmeichel	£ 5.0	123	Leicester
+Mignolet	£ 5.0	67	Liverpool
+Karius	£ 5.0	88	Liverpool
+Butland	£ 5.0	125	Stoke
+Begovic	£ 4.5	112	Bournemouth
+Ryan	£ 4.5	146	Brighton
+Hennessey	£ 4.5	99	Crystal Palace
+Lössl	£ 4.5	135	Huddersfield
+Darlow	£ 4.5	33	Newcastle
+McCarthy	£ 4.5	52	Southampton
+Forster	£ 5.0	73	Southampton
+Fabianski	£ 4.5	157	Swansea
+Gomes	£ 4.5	64	Watford
+Foster	£ 4.5	123	West Brom
+Pope	£ 4.5	152	Burnley
+Hart	£ 4.5	59	West Ham
+Karnezis	£ 4.5	47	Watford
+Dubravka	£ 4.5	53	Newcastle
+Speroni	£ 4.0	36	Crystal Palace
+Elliot	£ 4.0	57	Newcastle
+Adrián	£ 4.0	72	West Ham

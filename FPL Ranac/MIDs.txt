@@ -1,0 +1,139 @@
+﻿Eriksen	£ 9.5	199	Spurs
+Özil	£ 9.5	112	Arsenal
+Mané	£ 9.5	147	Liverpool
+Coutinho	£ 9.0	103	Liverpool
+Sterling	£ 8.0	229	Man City
+Alli	£ 9.5	175	Spurs
+Mahrez	£ 8.5	195	Leicester
+Sane	£ 8.5	179	Man City
+Son	£ 8.0	178	Spurs
+David Silva	£ 8.0	169	Man City
+Sigurdsson	£ 8.5	96	Everton
+Pogba	£ 8.0	138	Man Utd
+Martial	£ 8.0	125	Man Utd
+Pedro	£ 8.0	81	Chelsea
+Mkhitaryan	£ 8.0	107	Arsenal
+Antonio	£ 7.5	62	West Ham
+Bernardo Silva	£ 8.0	112	Man City
+Zaha	£ 7.0	136	Crystal Palace
+Arnautovic	£ 7.0	144	West Ham
+Walcott	£ 7.5	62	Everton
+Ramsey	£ 7.0	130	Arsenal
+Willian	£ 7.0	130	Chelsea
+Fabregas	£ 7.0	89	Chelsea
+Mata	£ 7.0	100	Man Utd
+Andre Ayew	£ 7.0	77	Swansea
+Wijnaldum	£ 7.0	85	Liverpool
+Lanzini	£ 7.0	106	West Ham
+Tadic	£ 6.5	122	Southampton
+Shaqiri	£ 6.0	155	Stoke
+Stanislas	£ 6.0	75	Bournemouth
+Lingard	£ 6.0	128	Man Utd
+João Mário	£ 6.0	46	West Ham
+Redmond	£ 6.0	72	Southampton
+Izquierdo	£ 6.0	101	Brighton
+Pereyra	£ 6.0	81	Watford
+Richarlison	£ 6.0	125	Watford
+Kachunga	£ 6.0	46	Huddersfield
+Iborra	£ 6.0	58	Leicester
+Boufal	£ 6.0	55	Southampton
+Townsend	£ 6.0	121	Crystal Palace
+Chamberlain	£ 6.0	94	Liverpool
+Knockaert	£ 6.0	88	Brighton
+Gross	£ 5.5	164	Brighton
+Ince	£ 5.5	82	Huddersfield
+Albrighton	£ 5.5	107	Leicester
+Defour	£ 5.5	62	Burnley
+Hendrick	£ 5.5	85	Burnley
+Lennon	£ 5.5	65	Burnley
+Gündogan	£ 5.5	82	Man City
+Ritchie	£ 6.0	116	Newcastle
+Phillips	£ 5.5	81	West Brom
+Carrillo	£ 5.5	64	Watford
+Pritchard	£ 5.5	40	Huddersfield
+Brady	£ 5.5	56	Burnley
+Cabaye	£ 5.5	73	Crystal Palace
+Gray	£ 5.5	80	Leicester
+Henderson	£ 5.5	75	Liverpool
+Sissoko	£ 5.5	58	Spurs
+Noble	£ 5.5	84	West Ham
+Pröpper	£ 5.5	87	Brighton
+Milivojevic	£ 4.5	144	Crystal Palace
+Mooy	£ 5.5	113	Huddersfield
+Shelvey	£ 5.5	73	Newcastle
+Fer	£ 5.0	41	Swansea
+Doucouré	£ 5.5	136	Watford
+Choupo-Moting	£ 5.5	107	Stoke
+Davies	£ 5.0	66	Everton
+Allen	£ 5.0	109	Stoke
+Iwobi	£ 5.0	89	Arsenal
+Xhaka	£ 5.5	109	Arsenal
+Wilshere	£ 5.0	46	Arsenal
+Arter	£ 5.0	27	Bournemouth
+Pugh	£ 5.0	32	Bournemouth
+Gosling	£ 5.0	59	Bournemouth
+Fraser	£ 5.0	97	Bournemouth
+March	£ 5.0	74	Brighton
+Gudmundsson	£ 5.0	117	Burnley
+Fernandinho	£ 5.0	120	Man City
+Herrera	£ 5.0	44	Man Utd
+Cleverley	£ 5.0	58	Watford
+Brunt	£ 5.0	81	West Brom
+Kouyaté	£ 5.0	86	West Ham
+Murphy	£ 5.0	51	Newcastle
+Badou Ndiaye	£ 5.0	41	Stoke
+Arfield	£ 5.0	56	Burnley
+Kanté	£ 5.0	101	Chelsea
+Ndidi	£ 5.0	78	Leicester
+Can	£ 5.0	92	Liverpool
+Ward-Prowse	£ 5.0	84	Southampton
+Dembélé	£ 5.0	52	Spurs
+Bakayoko	£ 5.0	77	Chelsea
+Merino	£ 5.0	49	Newcastle
+Kenedy	£ 4.5	51	Newcastle
+Gueye	£ 5.0	87	Everton
+Williams	£ 5.0	28	Huddersfield
+Young	£ 5.0	98	Man Utd
+Atsu	£ 5.0	78	Newcastle
+Capoue	£ 5.0	48	Watford
+Livermore	£ 5.0	89	West Brom
+Lemina	£ 5.0	58	Southampton
+Matic	£ 5.0	91	Man Utd
+Schneiderlin	£ 5.0	52	Everton
+Davis	£ 5.0	71	Southampton
+Fletcher	£ 5.0	67	Stoke
+Dier	£ 5.0	85	Spurs
+McClean	£ 5.0	45	West Brom
+Clucas	£ 5.0	75	Swansea
+Krychowiak	£ 5.0	58	West Brom
+Diamé	£ 5.0	70	Newcastle
+Ki Sung-yueng	£ 5.0	73	Swansea
+Hughes	£ 4.5	53	Watford
+Elneny	£ 4.5	22	Arsenal
+Surman	£ 4.5	82	Bournemouth
+Ibe	£ 4.5	85	Bournemouth
+Lewis Cook	£ 4.5	58	Bournemouth
+Stephens	£ 4.5	87	Brighton
+Cork	£ 4.5	100	Burnley
+Delph	£ 4.5	55	Man City
+Sobhi	£ 4.5	51	Stoke
+Maitland-Niles	£ 4.5	25	Arsenal
+Loftus-Cheek	£ 4.5	77	Crystal Palace
+McArthur	£ 4.5	101	Crystal Palace
+Barry	£ 4.5	56	West Brom
+van La Parra	£ 4.5	74	Huddersfield
+Hogg	£ 4.5	53	Huddersfield
+Dyer	£ 4.5	41	Swansea
+James	£ 4.5	26	Leicester
+Westwood	£ 4.5	35	Burnley
+Højbjerg	£ 4.5	39	Southampton
+Carroll	£ 4.5	85	Swansea
+Yacob	£ 4.5	23	West Brom
+Hayden	£ 4.5	41	Newcastle
+King	£ 4.5	51	Swansea
+Oriol Romeu	£ 4.5	68	Southampton
+Obiang	£ 4.5	54	West Ham
+Sánchez	£ 12.0	152	Man Utd
+Salah	£ 9.0	303	Liverpool
+Hazard	£ 10.5	173	Chelsea
+De Bruyne	£ 10.0	209	Man City

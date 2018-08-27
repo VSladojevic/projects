@@ -1,0 +1,531 @@
+de Gea-Man Utd-99-5.9-G
+Courtois-Chelsea-74-5.5-G
+Ederson-Man City-67-5.5-G
+Lloris-Spurs-61-5.5-G
+Cech-Arsenal-75-5.4-G
+Macey-Arsenal-0-5.0-G
+Schmeichel-Leicester-68-5.0-G
+Forster-Southampton-71-5.0-G
+Butland-Stoke-39-5.0-G
+Mignolet-Liverpool-56-4.9-G
+Ospina-Arsenal-0-4.8-G
+Heaton-Burnley-8-4.8-G
+Pope-Burnley-82-4.8-G
+Eduardo-Chelsea-0-4.8-G
+Caballero-Chelsea-0-4.8-G
+Pickford-Everton-65-4.8-G
+Karius-Liverpool-12-4.8-G
+Vorm-Spurs-0-4.8-G
+Romero-Man Utd-0-4.7-G
+Lössl-Huddersfield-68-4.6-G
+Bravo-Man City-1-4.6-G
+Fabianski-Swansea-80-4.6-G
+Begovic-Bournemouth-64-4.5-G
+Ryan-Brighton-70-4.5-G
+Ward-Liverpool-0-4.5-G
+Karnezis-Watford-0-4.5-G
+Gomes-Watford-53-4.5-G
+Hamer-Leicester-0-4.4-G
+Darlow-Newcastle-9-4.4-G
+McCarthy-Southampton-0-4.4-G
+Foster-West Brom-55-4.4-G
+Hart-West Ham-45-4.4-G
+Hennessey-Crystal Palace-30-4.3-G
+Robles-Everton-0-4.3-G
+Stekelenburg-Everton-0-4.3-G
+Jakupovic-Leicester-0-4.3-G
+Grant-Stoke-5-4.3-G
+Gazzaniga-Spurs-9-4.3-G
+Adrián-West Ham-21-4.3-G
+Boruc-Bournemouth-0-4.2-G
+Speroni-Crystal Palace-31-4.1-G
+Elliot-Newcastle-45-4.1-G
+Federici-Bournemouth-0-4.0-G
+Ramsdale-Bournemouth-0-4.0-G
+Krul-Brighton-0-4.0-G
+Mäenpää-Brighton-0-4.0-G
+Legzdins-Burnley-0-4.0-G
+Lindegaard-Burnley-0-4.0-G
+Henry-Crystal Palace-0-4.0-G
+Green-Huddersfield-0-4.0-G
+Coleman-Huddersfield-0-4.0-G
+Woodman-Newcastle-0-4.0-G
+Taylor-Southampton-0-4.0-G
+Haugaard-Stoke-0-4.0-G
+Mulder-Swansea-0-4.0-G
+Nordfeldt-Swansea-0-4.0-G
+Whiteman-Spurs-0-4.0-G
+Palmer-West Brom-0-4.0-G
+Myhill-West Brom-1-4.0-G
+Trott-West Ham-0-4.0-G
+Joel Pereira-Man Utd-0-3.9-G
+Alonso-Chelsea-90-7.0-D
+Azpilicueta-Chelsea-89-6.9-D
+Valencia-Man Utd-94-6.9-D
+Walker-Man City-66-6.6-D
+Moses-Chelsea-42-6.4-D
+Coleman-Everton-0-6.4-D
+Rose-Spurs-13-6.4-D
+Mendy-Man City-17-6.3-D
+Cahill-Chelsea-39-6.2-D
+Otamendi-Man City-87-6.2-D
+Kolasinac-Arsenal-76-6.1-D
+Milner-Liverpool-32-6.1-D
+Koscielny-Arsenal-65-6.0-D
+Bailly-Man Utd-46-6.0-D
+Sánchez-Spurs-36-6.0-D
+Vertonghen-Spurs-60-6.0-D
+Bellerín-Arsenal-70-5.9-D
+Zappacosta-Chelsea-33-5.9-D
+Aurier-Spurs-25-5.9-D
+Monreal-Arsenal-84-5.8-D
+David Luiz-Chelsea-29-5.8-D
+Rüdiger-Chelsea-49-5.8-D
+Kompany-Man City-17-5.8-D
+Alderweireld-Spurs-38-5.8-D
+Baines-Everton-36-5.7-D
+Christensen-Chelsea-52-5.6-D
+Stones-Man City-46-5.5-D
+Zouma-Stoke-42-5.5-D
+Davies-Spurs-64-5.5-D
+Trippier-Spurs-58-5.5-D
+Mustafi-Arsenal-54-5.4-D
+Matip-Liverpool-48-5.4-D
+Smalling-Man Utd-48-5.4-D
+Jones-Man Utd-69-5.4-D
+Rojo-Man Utd-1-5.4-D
+Bertrand-Southampton-57-5.4-D
+van Dijk-Southampton-25-5.4-D
+Keane-Everton-19-5.3-D
+Maguire-Leicester-67-5.3-D
+Lovren-Liverpool-50-5.3-D
+Clyne-Liverpool-0-5.3-D
+Williams-Everton-44-5.2-D
+Blind-Man Utd-19-5.2-D
+Ward-Burnley-76-5.1-D
+van Aanholt-Crystal Palace-7-5.1-D
+Danilo-Man City-32-5.0-D
+Mangala-Man City-14-5.0-D
+Darmian-Man Utd-9-5.0-D
+Hoedt-Southampton-19-5.0-D
+Mawson-Swansea-59-5.0-D
+Olsson-Swansea-53-5.0-D
+Gibbs-West Brom-37-5.0-D
+Cresswell-West Ham-57-5.0-D
+Daniels-Bournemouth-57-4.9-D
+Aké-Bournemouth-47-4.9-D
+Sakho-Crystal Palace-40-4.9-D
+Funes Mori-Everton-0-4.9-D
+Dragovic-Leicester-0-4.9-D
+Fuchs-Leicester-39-4.9-D
+Shaw-Man Utd-7-4.9-D
+Lindelöf-Man Utd-15-4.9-D
+Martins Indi-Stoke-5-4.9-D
+Holebas-Watford-33-4.9-D
+Nyom-West Brom-44-4.9-D
+Evans-West Brom-37-4.9-D
+Zabaleta-West Ham-48-4.9-D
+Mertesacker-Arsenal-14-4.8-D
+Steve Cook-Bournemouth-38-4.8-D
+Adam Smith-Bournemouth-27-4.8-D
+Tarkowski-Burnley-68-4.8-D
+Ward-Crystal Palace-27-4.8-D
+Smith-Huddersfield-33-4.8-D
+Huth-Leicester-0-4.8-D
+Yoshida-Southampton-57-4.8-D
+Cédric-Southampton-40-4.8-D
+Shawcross-Stoke-32-4.8-D
+Pieters-Stoke-29-4.8-D
+Janmaat-Watford-17-4.8-D
+Dawson-West Brom-27-4.8-D
+Fonte-West Ham-34-4.8-D
+Reid-West Ham-36-4.8-D
+Chambers-Arsenal-0-4.7-D
+Mee-Burnley-62-4.7-D
+Dann-Crystal Palace-29-4.7-D
+Schlupp-Crystal Palace-34-4.7-D
+Riedewald-Crystal Palace-5-4.7-D
+Jagielka-Everton-17-4.7-D
+Gomez-Liverpool-57-4.7-D
+Duffy-Brighton-58-4.6-D
+Lowton-Burnley-53-4.6-D
+Schindler-Huddersfield-52-4.6-D
+Robertson-Liverpool-30-4.6-D
+Lascelles-Newcastle-48-4.6-D
+Naughton-Swansea-60-4.6-D
+Kabasele-Watford-48-4.6-D
+McAuley-West Brom-4-4.6-D
+Holding-Arsenal-8-4.5-D
+Debuchy-Arsenal-0-4.5-D
+Bruno-Brighton-51-4.5-D
+Souaré-Crystal Palace-0-4.5-D
+Hadergjonaj-Huddersfield-15-4.5-D
+Löwe-Huddersfield-46-4.5-D
+Zanka-Huddersfield-56-4.5-D
+Morgan-Leicester-42-4.5-D
+Simpson-Leicester-42-4.5-D
+Moreno-Liverpool-44-4.5-D
+Clark-Newcastle-40-4.5-D
+Stephens-Southampton-17-4.5-D
+Fernández-Swansea-37-4.5-D
+Foyth-Spurs-0-4.5-D
+Kiko Femenía-Watford-51-4.5-D
+Wagué-Watford-1-4.5-D
+Hegazi-West Brom-56-4.5-D
+Francis-Bournemouth-26-4.4-D
+Schelotto-Brighton-4-4.4-D
+Dunk-Brighton-44-4.4-D
+Bong-Brighton-24-4.4-D
+Fosu-Mensah-Crystal Palace-15-4.4-D
+Kenny-Everton-32-4.4-D
+Flanagan-Liverpool-0-4.4-D
+Yedlin-Newcastle-27-4.4-D
+Lejeune-Newcastle-17-4.4-D
+Manquillo-Newcastle-35-4.4-D
+Tymon-Stoke-0-4.4-D
+van der Hoorn-Swansea-29-4.4-D
+Zeegelaar-Watford-21-4.4-D
+Cathcart-Watford-1-4.4-D
+Britos-Watford-20-4.4-D
+Ogbonna-West Ham-35-4.4-D
+Masuaku-West Ham-31-4.4-D
+Rice-West Ham-6-4.4-D
+Mings-Bournemouth-0-4.3-D
+Suttner-Brighton-27-4.3-D
+Bardsley-Burnley-20-4.3-D
+Tomkins-Crystal Palace-21-4.3-D
+Martina-Everton-27-4.3-D
+Malone-Huddersfield-18-4.3-D
+Benalouane-Leicester-0-4.3-D
+Chilwell-Leicester-23-4.3-D
+Klavan-Liverpool-42-4.3-D
+Targett-Southampton-0-4.3-D
+McQueen-Southampton-3-4.3-D
+Cameron-Stoke-17-4.3-D
+Bartley-Swansea-3-4.3-D
+Kaboul-Watford-7-4.3-D
+Prödl-Watford-15-4.3-D
+Collins-West Ham-14-4.3-D
+Byram-West Ham-0-4.3-D
+Taylor-Burnley-6-4.2-D
+Kelly-Crystal Palace-13-4.2-D
+Delaney-Crystal Palace-0-4.2-D
+Holgate-Everton-27-4.2-D
+Hefele-Huddersfield-1-4.2-D
+Alexander-Arnold-Liverpool-17-4.2-D
+Dummett-Newcastle-1-4.2-D
+Pied-Southampton-2-4.2-D
+Bednarek-Southampton-0-4.2-D
+Wimmer-Stoke-13-4.2-D
+Johnson-Stoke-1-4.1-D
+Walker-Peters-Spurs-7-4.1-D
+Mariappa-Watford-22-4.1-D
+Simpson-Bournemouth-0-4.0-D
+Long-Burnley-15-4.0-D
+Cranie-Huddersfield-2-4.0-D
+Stankovic-Huddersfield-0-4.0-D
+Gámez-Newcastle-9-4.0-D
+Souttar-Stoke-0-4.0-D
+Edwards-Stoke-0-4.0-D
+Rodon-Swansea-0-4.0-D
+Melbourne-West Brom-0-4.0-D
+Ferguson-West Brom-0-4.0-D
+Brad Smith-Bournemouth-0-3.9-D
+Hünemeier-Brighton-1-3.9-D
+Rosenior-Brighton-3-3.9-D
+Goldson-Brighton-0-3.9-D
+Tuanzebe-Man Utd-0-3.9-D
+Haidara-Newcastle-0-3.9-D
+Mbemba-Newcastle-17-3.9-D
+Rangel-Swansea-1-3.9-D
+Mason-Watford-0-3.9-D
+Sánchez-Arsenal-68-11.8-M
+Hazard-Chelsea-79-10.9-M
+De Bruyne-Man City-113-10.3-M
+Salah-Liverpool-135-10.0-M
+Mané-Liverpool-54-9.4-M
+Özil-Arsenal-71-9.3-M
+Eriksen-Spurs-99-9.3-M
+Coutinho-Liverpool-80-9.0-M
+Alli-Spurs-69-9.0-M
+Mahrez-Leicester-94-8.6-M
+Sané-Man City-95-8.6-M
+Sterling-Man City-112-8.5-M
+David Silva-Man City-102-8.2-M
+Sigurdsson-Everton-60-8.0-M
+Martial-Man Utd-69-8.0-M
+Son-Spurs-70-8.0-M
+Pogba-Man Utd-56-7.9-M
+Pedro-Chelsea-51-7.7-M
+Mkhitaryan-Man Utd-53-7.6-M
+Barkley-Everton-0-7.4-M
+Bernardo Silva-Man City-36-7.4-M
+Antonio-West Ham-39-7.4-M
+Lallana-Liverpool-1-7.3-M
+Walcott-Arsenal-3-7.1-M
+Ramsey-Arsenal-81-7.0-M
+Klaassen-Everton-4-7.0-M
+Cazorla-Arsenal-0-6.9-M
+Fàbregas-Chelsea-48-6.9-M
+Zaha-Crystal Palace-53-6.9-M
+Mata-Man Utd-48-6.8-M
+Arnautovic-West Ham-32-6.8-M
+Ayew-West Ham-38-6.8-M
+Lanzini-West Ham-49-6.8-M
+Willian-Chelsea-59-6.7-M
+Wijnaldum-Liverpool-43-6.7-M
+Richarlison-Watford-85-6.6-M
+Bolasie-Everton-0-6.4-M
+Tadic-Southampton-54-6.3-M
+Lamela-Spurs-9-6.3-M
+Musa-Leicester-0-6.2-M
+Shaqiri-Stoke-76-6.2-M
+Yaya Touré-Man City-6-6.1-M
+Mirallas-Everton-5-6.0-M
+Lingard-Man Utd-58-6.0-M
+Redmond-Southampton-42-6.0-M
+Stanislas-Bournemouth-28-5.9-M
+Izquierdo-Brighton-34-5.9-M
+Groß-Brighton-84-5.9-M
+Kachunga-Huddersfield-44-5.8-M
+Iborra-Leicester-30-5.8-M
+Pereyra-Watford-24-5.8-M
+Boufal-Southampton-31-5.7-M
+Knockaert-Brighton-47-5.6-M
+Townsend-Crystal Palace-50-5.6-M
+Chamberlain-Liverpool-40-5.6-M
+Ritchie-Newcastle-62-5.6-M
+Chadli-West Brom-12-5.6-M
+Vlasic-Everton-10-5.5-M
+Ince-Huddersfield-43-5.5-M
+Albrighton-Leicester-52-5.5-M
+Jesé-Stoke-26-5.5-M
+Choupo-Moting-Stoke-63-5.5-M
+Carrillo-Watford-33-5.5-M
+Phillips-West Brom-39-5.5-M
+Wilshere-Arsenal-13-5.4-M
+Defour-Burnley-47-5.4-M
+Hendrick-Burnley-49-5.4-M
+Brady-Burnley-56-5.4-M
+Cabaye-Crystal Palace-39-5.4-M
+Lennon-Everton-25-5.4-M
+Henderson-Liverpool-45-5.4-M
+Nkoudou-Spurs-1-5.4-M
+Sissoko-Spurs-33-5.4-M
+Doucouré-Watford-78-5.4-M
+Morrison-West Brom-13-5.4-M
+Xhaka-Arsenal-55-5.3-M
+Pröpper-Brighton-48-5.3-M
+Mooy-Huddersfield-68-5.3-M
+Palmer-Huddersfield-4-5.3-M
+Gray-Leicester-46-5.3-M
+Gündogan-Man City-25-5.3-M
+Success-Watford-0-5.3-M
+Noble-West Ham-27-5.3-M
+Brown-Brighton-15-5.2-M
+Davies-Everton-26-5.2-M
+Shelvey-Newcastle-18-5.2-M
+Routledge-Swansea-9-5.2-M
+Fer-Swansea-33-5.2-M
+Iwobi-Arsenal-29-5.1-M
+Fraser-Bournemouth-24-5.1-M
+Walters-Burnley-2-5.1-M
+Lookman-Everton-10-5.1-M
+Fernandinho-Man City-59-5.1-M
+Young-Man Utd-54-5.1-M
+Herrera-Man Utd-23-5.1-M
+Allen-Stoke-42-5.1-M
+Brunt-West Brom-21-5.1-M
+March-Brighton-38-5.0-M
+Gudmundsson-Burnley-50-5.0-M
+Bakayoko-Chelsea-52-5.0-M
+Zinchenko-Man City-1-5.0-M
+Murphy-Newcastle-18-5.0-M
+Merino-Newcastle-37-5.0-M
+Davis-Southampton-58-5.0-M
+Ward-Prowse-Southampton-26-5.0-M
+Cleverley-Watford-47-5.0-M
+Burke-West Brom-10-5.0-M
+Krychowiak-West Brom-31-5.0-M
+Haksabanovic-West Ham-0-5.0-M
+Kouyaté-West Ham-37-5.0-M
+Arfield-Burnley-40-4.9-M
+Kanté-Chelsea-51-4.9-M
+Sako-Crystal Palace-21-4.9-M
+McCarthy-Everton-0-4.9-M
+Sabiri-Huddersfield-9-4.9-M
+Williams-Huddersfield-18-4.9-M
+Ndidi-Leicester-46-4.9-M
+Lemina-Southampton-24-4.9-M
+Fletcher-Stoke-49-4.9-M
+Ki Sung-yueng-Swansea-18-4.9-M
+Dembélé-Spurs-23-4.9-M
+Capoue-Watford-17-4.9-M
+Livermore-West Brom-38-4.9-M
+Nelson-Arsenal-0-4.8-M
+Arter-Bournemouth-24-4.8-M
+Pugh-Bournemouth-19-4.8-M
+Surman-Bournemouth-64-4.8-M
+Gosling-Bournemouth-12-4.8-M
+Ibe-Bournemouth-32-4.8-M
+Drinkwater-Chelsea-9-4.8-M
+Musonda-Chelsea-2-4.8-M
+Gueye-Everton-34-4.8-M
+van La Parra-Huddersfield-25-4.8-M
+Can-Liverpool-38-4.8-M
+Matic-Man Utd-47-4.8-M
+Atsu-Newcastle-41-4.8-M
+Afellay-Stoke-4-4.8-M
+Clucas-Swansea-24-4.8-M
+Wanyama-Spurs-3-4.8-M
+Winks-Spurs-30-4.8-M
+McClean-West Brom-19-4.8-M
+Skalak-Brighton-0-4.7-M
+Murphy-Brighton-6-4.7-M
+Kenedy-Chelsea-0-4.7-M
+Schneiderlin-Everton-20-4.7-M
+Foden-Man City-1-4.7-M
+Diaz-Man City-0-4.7-M
+Fellaini-Man Utd-32-4.7-M
+Adam-Stoke-3-4.7-M
+Narsingh-Swansea-13-4.7-M
+Dier-Spurs-39-4.7-M
+Cork-Burnley-52-4.6-M
+Loftus-Cheek-Crystal Palace-44-4.6-M
+Milivojevic-Crystal Palace-41-4.6-M
+Diamé-Newcastle-16-4.6-M
+Hughes-Watford-26-4.6-M
+Maitland-Niles-Arsenal-7-4.5-M
+Molumby-Brighton-0-4.5-M
+Stephens-Brighton-44-4.5-M
+Ulvestad-Burnley-0-4.5-M
+Marney-Burnley-0-4.5-M
+Ampadu-Chelsea-1-4.5-M
+Lumeka-Crystal Palace-1-4.5-M
+Mutch-Crystal Palace-0-4.5-M
+Wan-Bissaka-Crystal Palace-0-4.5-M
+Puncheon-Crystal Palace-11-4.5-M
+Baningime-Everton-3-4.5-M
+Choudhury-Leicester-1-4.5-M
+Delph-Man City-36-4.5-M
+Hayden-Newcastle-28-4.5-M
+Sobhi-Stoke-23-4.5-M
+Sanches-Swansea-15-4.5-M
+Oakley-Boothe-Spurs-0-4.5-M
+Barry-West Brom-38-4.5-M
+Field-West Brom-19-4.5-M
+Quina-West Ham-0-4.5-M
+Johnson-West Ham-0-4.5-M
+Makasi-West Ham-0-4.5-M
+Coquelin-Arsenal-6-4.4-M
+Kayal-Brighton-2-4.4-M
+Kaikai-Crystal Palace-1-4.4-M
+Lokilo-Crystal Palace-0-4.4-M
+Hogg-Huddersfield-19-4.4-M
+Billing-Huddersfield-12-4.4-M
+James-Leicester-8-4.4-M
+Saivet-Newcastle-0-4.4-M
+Oriol Romeu-Southampton-37-4.4-M
+Britton-Swansea-9-4.4-M
+Fulton-Swansea-0-4.4-M
+Dyer-Swansea-12-4.4-M
+Carroll-Swansea-43-4.4-M
+Watson-Watford-2-4.4-M
+Obiang-West Ham-35-4.4-M
+Fernandes-West Ham-9-4.4-M
+Lewis Cook-Bournemouth-20-4.3-M
+Sidwell-Brighton-0-4.3-M
+Westwood-Burnley-7-4.3-M
+Scott-Chelsea-0-4.3-M
+McArthur-Crystal Palace-36-4.3-M
+Lee Chung-yong-Crystal Palace-3-4.3-M
+Besic-Everton-2-4.3-M
+Lolley-Huddersfield-1-4.3-M
+Whitehead-Huddersfield-3-4.3-M
+King-Leicester-22-4.3-M
+Amartey-Leicester-1-4.3-M
+Grujic-Liverpool-3-4.3-M
+Woodburn-Liverpool-0-4.3-M
+Carrick-Man Utd-0-4.3-M
+McTominay-Man Utd-4-4.3-M
+Colback-Newcastle-0-4.3-M
+Aarons-Newcastle-3-4.3-M
+Højbjerg-Southampton-9-4.3-M
+Sims-Southampton-0-4.3-M
+Mesa-Swansea-14-4.3-M
+Chalobah-Watford-12-4.3-M
+Yacob-West Brom-13-4.3-M
+Elneny-Arsenal-11-4.2-M
+Kane-Spurs-97-12.8-F
+Agüero-Man City-86-11.5-F
+Lukaku-Man Utd-94-11.3-F
+Morata-Chelsea-86-10.7-F
+Lacazette-Arsenal-69-10.4-F
+Jesus-Man City-74-10.2-F
+Ibrahimovic-Man Utd-4-9.7-F
+Vardy-Leicester-78-8.7-F
+Firmino-Liverpool-82-8.6-F
+Giroud-Arsenal-36-8.2-F
+Batshuayi-Chelsea-17-8.1-F
+Sturridge-Liverpool-25-7.9-F
+Defoe-Bournemouth-41-7.6-F
+Benteke-Crystal Palace-27-7.6-F
+Rooney-Everton-91-7.6-F
+Rashford-Man Utd-65-7.6-F
+Llorente-Spurs-9-7.4-F
+Welbeck-Arsenal-35-7.3-F
+Sandro-Everton-9-7.1-F
+King-Bournemouth-43-7.0-F
+Slimani-Leicester-12-6.7-F
+Chicharito-West Ham-43-6.7-F
+Iheanacho-Leicester-10-6.5-F
+Wood-Burnley-48-6.4-F
+Gabbiadini-Southampton-40-6.4-F
+Gray-Watford-46-6.3-F
+Deeney-Watford-27-6.3-F
+Austin-Southampton-45-6.2-F
+Gayle-Newcastle-40-6.1-F
+Rondón-West Brom-33-6.0-F
+Murray-Brighton-47-5.8-F
+Abraham-Swansea-60-5.8-F
+Carroll-West Ham-8-5.8-F
+Callum Wilson-Bournemouth-28-5.7-F
+Afobe-Bournemouth-18-5.7-F
+Vokes-Burnley-32-5.7-F
+Mounie-Huddersfield-39-5.7-F
+Bony-Swansea-29-5.7-F
+Long-Southampton-23-5.6-F
+Diouf-Stoke-60-5.6-F
+Berahino-Stoke-12-5.6-F
+Okazaki-Leicester-58-5.5-F
+Joselu-Newcastle-43-5.5-F
+Rodriguez-West Brom-38-5.5-F
+Sakho-West Ham-24-5.5-F
+Wickham-Crystal Palace-0-5.4-F
+Calvert-Lewin-Everton-62-5.4-F
+Ings-Liverpool-2-5.4-F
+Zárate-Watford-0-5.4-F
+Depoitre-Huddersfield-55-5.3-F
+Okaka-Watford-9-5.3-F
+Barnes-Burnley-28-5.2-F
+Pérez-Newcastle-36-5.2-F
+Nketiah-Arsenal-0-5.0-F
+Ayew-Swansea-43-5.0-F
+Martínez-West Ham-0-5.0-F
+Mousset-Bournemouth-7-4.9-F
+Baldock-Brighton-0-4.9-F
+Wells-Burnley-0-4.9-F
+Sinclair-Watford-0-4.9-F
+Robson-Kanu-West Brom-21-4.9-F
+Hemed-Brighton-33-4.8-F
+Niasse-Everton-40-4.8-F
+Ulloa-Leicester-3-4.8-F
+Crouch-Stoke-36-4.8-F
+Solanke-Liverpool-17-4.7-F
+Mitrovic-Newcastle-10-4.7-F
+Anderson-Crystal Palace-0-4.5-F
+Ladapo-Crystal Palace-1-4.5-F
+Quaner-Huddersfield-18-4.5-F
+Ngoy-Stoke-0-4.5-F
+McBurnie-Swansea-7-4.5-F
+Tulloch-West Brom-0-4.5-F

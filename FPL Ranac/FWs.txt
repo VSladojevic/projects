@@ -1,0 +1,43 @@
+Firmino	£ 8.5	181	Liverpool
+Vardy	£ 8.5	183	Leicester
+Giroud	£ 8.0	77	Chelsea
+Defoe	£ 7.5	60	Bournemouth
+Benteke	£ 7.5	84	Crystal Palace
+Welbeck	£ 7.5	70	Arsenal
+Rashford	£ 7.5	104	Man Utd
+Rooney	£ 7.5	113	Everton
+King	£ 7.0	110	Bournemouth
+Chicharito	£ 7.0	93	West Ham
+Tosun	£ 7.0	55	Everton
+Gray	£ 6.5	79	Watford
+Deeney	£ 6.5	73	Watford
+Gabbiadini	£ 6.5	66	Southampton
+Wood	£ 6.5	104	Burnley
+Gayle	£ 6.0	94	Newcastle
+Rondón	£ 6.0	103	West Brom
+Austin	£ 6.0	72	Southampton
+Murray	£ 5.5	111	Brighton
+Pérez	£ 5.5	124	Newcastle
+Vokes	£ 5.5	63	Burnley
+Wilson	£ 5.5	102	Bournemouth
+Long	£ 5.5	53	Southampton
+Mounie	£ 5.5	92	Huddersfield
+Joselu	£ 5.5	69	Newcastle
+Jordan Ayew	£ 5.5	108	Swansea
+Abraham	£ 5.5	86	Swansea
+Rodriguez	£ 5.5	109	West Brom
+Okazaki	£ 5.5	76	Leicester
+Diouf	£ 5.0	99	Stoke
+Barnes	£ 5.0	92	Burnley
+Depoitre	£ 5.0	94	Huddersfield
+Calvert-Lewin	£ 5.0	88	Everton
+Crouch	£ 5.0	73	Stoke
+Niasse	£ 4.5	83	Everton
+Quaner	£ 4.5	44	Huddersfield
+Kane	£ 12.5	217	Spurs
+Agüero	£ 11.5	169	Man City
+Lukaku	£ 11.0	162	Man Utd
+Aubameyang	£ 10.5	87	Arsenal
+Morata	£ 10.5	122	Chelsea
+Lacazette	£ 10.5	138	Arsenal
+Jesus	£ 10.0	126	Man City
