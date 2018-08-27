@@ -1,0 +1,30 @@
+program MJProgram
+	int noviInt;
+{
+	void main() bool b[];
+	{
+		b = new bool[2];
+		b[0] = true; b[1] = true;
+		noviInt = 4;
+		if(noviInt>3 && b[0] && b[1]){
+			noviInt = 1;	
+		}
+		print(noviInt);
+		
+		if(5>1 || true){
+			b[1] = false;
+			noviInt = 1;	
+		} else 
+			noviInt = 0;
+		
+		print(noviInt);
+		print(b[1]);
+		
+		if(true)
+			if(noviInt != 1)
+				print('L');
+			else	
+				print('W');
+				
+	}
+}

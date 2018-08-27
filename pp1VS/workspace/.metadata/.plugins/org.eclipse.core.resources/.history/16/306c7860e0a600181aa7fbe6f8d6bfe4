@@ -1,0 +1,240 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+
+parser code {:
+	
+	int printCallCount = 0;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+terminal AND, BIGGER, BIGGEREQUAL, BREAK, CONTINUE, DO, DOT, ELSE, EQUALEQUAL, IF, NOTEQUAL, OR, RETURN, SMALLER, SMALLEREQUAL, WHILE;
+terminal Integer NUMCONST;
+terminal String IDENT;
+terminal String BOOLCONST;
+terminal Character CHARCONST;
+terminal PROG, LBRACE, RBRACE, CONST, SEMICOLON, COMMA, EQUAL;
+terminal LSQUARE, RSQUARE, LPAREN, RPAREN, CLASS, EXTENDS, VOID, READ, PRINT, PLUSPLUS, MINUSMINUS, MINUS, PLUS, MUL, DIV, MOD, NEW;
+non terminal DeclList, MethodDeclList, DeclPart, ConstDecl, VarDecl, ClassDecl, ConstList;
+non terminal VarDeclList, VarList, VarSingle, ClassName, ClassInside, MethodDeclBrace, MethodDecl, FormParsMaybe, StatementList, ConstSingle;
+non terminal FormPars, FormPar, SquareMaybe, Statement, DesignatorStatement;
+non terminal Addop, Mulop;
+non terminal ActPars;
+
+non terminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodTypeName, MethodReturn, Designator;
+non terminal rs.etf.pp1.symboltable.concepts.Struct Type, Expr, ConstName, TermExpanded, Term, Factor, ExprExpanded;
+
+Program ::= (Program) PROG ProgName DeclList LBRACE MethodDeclList RBRACE ;
+
+ProgName ::= (ProgName) IDENT;
+
+// Global Decl list
+DeclList ::= (DeclarationList) DeclList DeclPart 
+			| 
+			(EpsilonDeclList) /*epsilon*/;
+
+DeclPart ::= (ConstDeclPart)  ConstDecl 
+			| 
+			(VarDeclPart) VarDecl
+			| 
+			(ClassDeclPart) ClassDecl;
+		
+		
+//-------CONST
+// globalne konstante, konstante se samo tad i definisu, posle naziva programa
+ConstDecl ::= (ConstDecl) CONST Type ConstList SEMICOLON ;
+Type ::= (Type) IDENT ;
+
+ConstList ::= (ConstantList) ConstList COMMA ConstSingle 
+				| 
+			  (ConstantPart) ConstSingle ;
+				
+ConstSingle ::= (ConstSingle) IDENT EQUAL ConstName ;
+
+ConstName ::= (NumberConst) NUMCONST
+			| 
+			(CharacterConst) CHARCONST
+			| 
+			(BooleanConst) BOOLCONST ; 
+			
+			
+//-------VAR
+VarDeclList ::= (VariableDeclList) VarDeclList VarDecl 
+				| 
+				(EpsilonVarDeclList) /*epsilon*/;
+			
+				
+VarDecl ::= (VarListDecl) Type VarList SEMICOLON ;
+
+VarList ::= (VariableList) VarList COMMA VarSingle 
+			| 
+			(VariablePart) VarSingle ;
+
+VarSingle ::= (Var)  IDENT 
+			| 
+			(VarArrayDecl) IDENT LSQUARE RSQUARE ;
+
+
+//-------CLASS
+ClassDecl ::= (ClassDecl) ClassName LBRACE ClassInside RBRACE ;
+
+ClassName ::= (ClasName) CLASS IDENT 
+				| 
+			  (ClasNameExtends) CLASS IDENT EXTENDS Type ;
+
+ClassInside ::= (ClassInside) VarDeclList MethodDeclBrace ;
+
+MethodDeclBrace ::= (MethodDeclarationBrace) LBRACE MethodDeclList RBRACE
+					| 
+					(EpsilonMethodDeclBrace) /*epsilon*/ ;
+				
+//-------METHOD
+MethodDeclList ::= (MethodDeclarationList) MethodDeclList MethodDecl 
+				| 
+				(EpsilonMethodDeclList) /*epsilon*/ ;
+
+MethodDecl ::=  (MethodDecl) MethodTypeName LPAREN FormParsMaybe RPAREN VarDeclList LBRACE StatementList RBRACE ;
+
+MethodTypeName ::= (MethodTypeName) MethodReturn IDENT ;
+
+MethodReturn ::= (MethodReturnType) Type 
+				| 
+				(MethodReturnVoid) VOID;
+
+FormParsMaybe ::= (FormParametersMaybe) FormPars 
+					| 
+				  (EpsilonFormParsMaybe) /*epsilon*/ ;
+
+FormPars ::= (FormParameters) FormPars COMMA FormPar 
+			| 
+			(FormParametersPart) FormPar ;
+
+FormPar ::= (FormPar) Type IDENT SquareMaybe ;
+
+SquareMaybe ::= (SquaresMaybe) LSQUARE RSQUARE 
+			| 
+			(EpsilonSquareMaybe) /*epsilon*/ ;
+
+
+//-------Statement
+StatementList ::= (StatList) StatementList Statement 
+				|
+				(EpsilonStatementList) /*epsilon*/ ;
+
+Statement ::= (Statement1) DesignatorStatement SEMICOLON
+			| 
+			(ReadStatement) READ LPAREN Designator RPAREN SEMICOLON
+			| 
+		 	(PrintStatement) PRINT LPAREN ExprExpanded RPAREN SEMICOLON 
+		 	|
+		 	(ReturnEmptyStatement) RETURN SEMICOLON 
+		 	|
+		 	(ReturnExprStatement) RETURN Expr SEMICOLON ;
+
+ExprExpanded ::= (ExprExpanded1) Expr 
+				| 
+				(ExprExpanded2) Expr COMMA NUMCONST ;
+
+DesignatorStatement ::= (DesignatorEqual) Designator EQUAL Expr 
+		   			 |  
+		   			 (DesignatorInc) Designator PLUSPLUS 
+				     |  
+				     (DesignatorDec) Designator MINUSMINUS
+				     |
+				     (FuncCallNoArgs) Designator LPAREN RPAREN
+				     |
+				     (FuncCallWithArgs) Designator LPAREN ActPars RPAREN ;
+				     
+ActPars ::= (ActParsList) ActPars COMMA Expr 
+			|
+			(ActParsPart) Expr ;
+				     
+Designator ::= (DesignNoArr) IDENT
+			|  
+			(DesignArr) IDENT LSQUARE Expr RSQUARE ;
+
+Expr ::= (Expr1) TermExpanded  
+		|
+		(ExprAddop) Expr Addop Term
+		|
+		 (Expr2) Designator LPAREN RPAREN ;
+
+TermExpanded ::= (MinusTermExp) MINUS Term 
+				| 
+				(TermExp) Term ;
+
+
+
+Addop ::= (Plus) PLUS 
+			| 
+		  (Minus) MINUS ;
+
+
+Term ::= (TermFactor) Factor 
+				|
+		 (TermMulop) Term Mulop Factor ;
+
+
+Mulop ::= (Mul) MUL 
+		| 
+		(Div) DIV 
+		| 
+		(Mod) MOD ;
+
+Factor ::= (FactorNumber) NUMCONST
+		|  
+		(FactorCharacter) CHARCONST
+		|  
+		(FactorExpr) LPAREN Expr RPAREN
+		|  
+		(FactorBoolean) BOOLCONST
+		|  
+		(FactorNew) NEW Type
+		|  
+		(FactorNewExpr) NEW Type LSQUARE Expr RSQUARE 
+		|  
+		(FactorDesignator) Designator 
+		|
+		(FactorFunctionEmpty) Desingator LPAREN RPAREN
+		|
+		(FactorFunction) Desingator LPAREN ActPars RPAREN ;
+
+
+
+
+
