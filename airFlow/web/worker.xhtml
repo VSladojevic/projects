@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="title">
+                Worker
+            </ui:define>
+
+            <ui:define name="left">
+                <h:form>
+                    <p:menu>
+
+                        <p:menuitem value="Flights" url="worker.xhtml"/>
+                        <p:menuitem value="Add new airplane" url="add_airplane.xhtml"/>
+                        <p:menuitem value="Rent an airplane" url="rent_airplane.xhtml"/>
+                        <p:menuitem value="See renting offers" url="rent_offers.xhtml"/>
+                        <p:menuitem value="Log out"  action="#{controler.LogOut()}" />
+                    </p:menu>
+                </h:form>
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form>
+
+                    <p:dataTable paginator="true" rows="10" var="let" value="#{controler.flights_full}"
+                                 selectionMode="single" selection="#{workerBean.selected_flight}" rowKey="#{let.basic.id}">
+
+                        <f:facet name="header">
+                            Current flights
+                        </f:facet>
+                        <p:ajax event="rowSelect" listener="#{workerBean.onRowSelect()}" />  
+
+                        <p:column headerText="From" sortBy="#{let.dep.city}">
+                            <h:outputText value="#{let.dep.city} (#{let.basic.dep_airport}) #{let.dep_gate_name}" />
+                        </p:column>
+
+
+                        <p:column headerText="To" sortBy="#{let.arr.city}">
+                            <h:outputText value="#{let.arr.city} (#{let.basic.arr_airport}) #{let.arr_gate_name}" />
+                        </p:column>
+
+                        <p:column headerText="Departure" sortBy="#{let.basic.takeoff_time}">
+                            <h:outputText value="#{let.basic.takeoff_time}" />
+                        </p:column>
+
+                        <p:column headerText="Flight duration" sortBy="#{let.basic.duration}">
+                            <h:outputText value="#{let.basic.duration}" />
+                        </p:column>
+
+                        <p:column headerText="Aircraft" sortBy="#{let.plane.type}">
+                            <h:outputText value="#{let.plane.type}" />
+                        </p:column>
+
+                        <p:column headerText="Flight status" sortBy="#{let.basic.status}">
+                            <h:outputText value="#{let.basic.status}" />
+                        </p:column>
+
+
+
+
+
+                    </p:dataTable>
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

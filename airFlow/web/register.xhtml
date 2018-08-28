@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="title">
+                Register
+            </ui:define>
+            <ui:define name="left">
+                <h:form>
+                    <p:menu>
+
+                        <p:menuitem value="Login" url="login.xhtml"/>
+                        <p:menuitem value="Register" url="register.xhtml"/>
+                        <p:menuitem value="Change password" url="changepass.xhtml"/>
+                        <p:menuitem value="Login as guest" url="guest.xhtml"/>
+                        <p:menuitem value="Home" url="index.xhtml"/>
+                        <p:menuitem value="Log out"  action="#{controler.LogOut()}" />
+                    </p:menu>
+                </h:form>
+            </ui:define>
+
+            <ui:define name="content">
+                Registration form
+                <h:form>
+                    <h:panelGrid columns="1">
+                        <p:inputText value="#{regBean.ime}">Name: </p:inputText>
+                        <p:inputText value="#{regBean.prezime}">Surname: </p:inputText>
+                        <h:panelGrid columns="2">
+                            <p:outputLabel value="Gender:" />
+                            <p:selectOneRadio value="#{regBean.male}">
+                                <f:selectItem itemLabel="Male" itemValue="male" />
+                                <f:selectItem itemLabel="Female" itemValue="female" />
+                            </p:selectOneRadio>
+                        </h:panelGrid>
+                        <p:calendar value="#{regBean.rodj}">Birth date: </p:calendar>
+
+                        <h:panelGrid columns="2">
+                            <p:outputLabel>Company:</p:outputLabel>
+                            <p:selectOneMenu  value="#{regBean.kompanija}"> Company:
+                               
+                                <f:selectItems value="#{regBean.kompanijeNazivi}" />
+                            </p:selectOneMenu>
+                        </h:panelGrid>
+
+                        <h:panelGrid columns="2">
+                            <p:outputLabel value="Type:" />
+                            <p:selectOneRadio value="#{regBean.tip}">
+                                <f:selectItem itemLabel="Stjuardesa" itemValue="stujardesa" />
+                                <f:selectItem itemLabel="Pilot" itemValue="pilot" />
+                                <f:selectItem itemLabel="Radnik" itemValue="radnik" />
+                            </p:selectOneRadio>
+                        </h:panelGrid>
+                    </h:panelGrid>
+
+
+                    <h:panelGrid columns="2">
+                        <p:inputText  required="true" requiredMessage="*" id="username" value="#{regBean.username}">Username: </p:inputText>
+                        <span   style="color:red" >#{regBean.errUsername}</span>
+
+                        <p:inputText id="email" value="#{regBean.email}">E-mail: </p:inputText>
+                        <h:message for="email"  style="color:red" />
+
+                        <p:password required="true"  requiredMessage="*"  id="password" value="#{regBean.password}">Password: </p:password>
+                        <span   style="color:red" >#{regBean.errPassword}</span>
+
+                        <p:password id="password2" value="#{regBean.password2}">Re-type password: </p:password>
+                        <span   style="color:red" >#{regBean.errPassword2}</span>
+                    </h:panelGrid>
+
+                    <h:commandButton value="Register" action="#{regBean.submit()}"/>
+                </h:form>
+
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

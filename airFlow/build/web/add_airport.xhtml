@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="title">
+                Administrator
+            </ui:define>
+
+            <ui:define name="left">
+                <h:form>
+                    <p:menu>
+
+
+                        <p:menuitem value="Approve users" url="admin.xhtml"/>
+                        <p:menuitem value="Edit companies" url="edit_companies.xhtml"/>
+                        <p:menuitem value="Pilot licenses" url="admin_license.xhtml"/>
+                        <p:menuitem value="Add airport" url="add_airport.xhtml"/>
+                        <p:menuitem value="New flight" url="admin_flight.xhtml"/>
+                        <p:menuitem value="New airplane" url="admin_airplane.xhtml"/>
+                        <p:menuitem value="Log out"  action="#{controler.LogOut()}" />
+
+                    </p:menu>
+                </h:form>
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form>
+
+                    <p:dataTable resizableColumns="true" paginator="true" rows="5" var="c" value="#{adminAirports.airports}"  >
+
+                        <f:facet name="header">
+                            Airports
+                        </f:facet> 
+
+                        <p:column headerText="Iata code">
+
+                            <h:outputText value="#{c.iata}" />
+
+                        </p:column>
+
+                        <p:column headerText="Name">
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{c.naziv}" /></f:facet>
+                                <f:facet name="input"><p:inputText  value="#{c.naziv}"/></f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="City">
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{c.city}" /></f:facet>
+                                <f:facet name="input"><p:inputText  value="#{c.city}"/></f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="Country">
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{c.country}" /></f:facet>
+                                <f:facet name="input"><p:inputText  value="#{c.country}"/></f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="Runways">
+
+                            <h:outputText value="#{c.br_pisti}" />
+
+                        </p:column>
+
+                        <p:column headerText="Terminals">
+                            <h:outputText value="#{c.br_terminala}" />
+                        </p:column>
+
+                        <p:column headerText="Latitude">
+                            <h:outputText value="#{c.latitude}" />
+                        </p:column>
+
+                        <p:column headerText="Longitude">
+                            <h:outputText value="#{c.longitude}" />
+                        </p:column>
+
+                    </p:dataTable>
+
+                    <br/>
+
+
+
+                    <p:dataTable rendered="#{adminAirports.showAir}"  var="a" value="#{adminAirports.novi}" editable="true">
+
+                        <f:facet name="header">
+                            Add new airport
+                        </f:facet> 
+                        <p:ajax update="@form" event="rowEdit" listener="#{adminAirports.addAirport}"  />
+                        <p:column headerText="Iata">
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{a.iata}" /></f:facet>
+                                <f:facet name="input"><p:inputText  value="#{a.iata}"/></f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="Name">
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{a.naziv}" /></f:facet>
+                                <f:facet name="input"><p:inputText  value="#{a.naziv}"/></f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="City">
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{a.city}" /></f:facet>
+                                <f:facet name="input"><p:inputText  value="#{a.city}"/></f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="Country">
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{a.country}" /></f:facet>
+                                <f:facet name="input"><p:inputText  value="#{a.country}"/></f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="Runways">
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{a.br_pisti}" /></f:facet>
+                                <f:facet name="input"><p:inputText  value="#{a.br_pisti}"/></f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="Terminals">
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{a.br_terminala}" /></f:facet>
+                                <f:facet name="input"><p:inputText  value="#{a.br_terminala}"/></f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="Latitude">
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{a.latitude}"><f:convertNumber pattern="#00.0000" /></h:outputText></f:facet>
+                                <f:facet name="input"><p:inputText  value="#{a.latitude}"><f:convertNumber pattern="#00.0000" /></p:inputText></f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+                        <p:column headerText="Longitude">
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{a.longitude}"><f:convertNumber pattern="#00.0000" /></h:outputText></f:facet>
+                                <f:facet name="input"><p:inputText  value="#{a.longitude}"><f:convertNumber pattern="#00.0000" /></p:inputText></f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+
+
+                        <p:column style="width:32px">
+                            <p:rowEditor />
+                        </p:column>
+                    </p:dataTable>
+
+                    <h:panelGrid rendered="#{adminAirports.show}" columns="4">
+
+
+                        <c:forEach var = "i" begin = "1" end = "#{adminAirports.novi.br_terminala}">
+                            Terminal <h:outputText value = "${i}"/>: <h:inputText value="#{adminAirports.terminals[i-1]}"/> 
+                        </c:forEach>
+
+                        <h:commandButton value="Add" action="#{adminAirports.addTerminals()}"/>
+                    </h:panelGrid>
+
+
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

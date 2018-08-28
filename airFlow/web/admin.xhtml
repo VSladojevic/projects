@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="title">
+                Administrator
+            </ui:define>
+
+            <ui:define name="left">
+                <h:form>
+                    <p:menu>
+
+                        <p:menuitem value="Approve users" url="admin.xhtml"/>
+                        <p:menuitem value="Edit companies" url="edit_companies.xhtml"/>
+                        <p:menuitem value="Pilot licenses" url="admin_license.xhtml"/>
+                        <p:menuitem value="Add airport" url="add_airport.xhtml"/>
+                        <p:menuitem value="New flight" url="admin_flight.xhtml"/>
+                        <p:menuitem value="New airplane" url="admin_airplane.xhtml"/>
+                        <p:menuitem value="Log out"  action="#{controler.LogOut()}" />
+
+                    </p:menu>
+                </h:form>
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form>
+
+                    <p:dataTable var="u" value="#{adminBean.users}" editable="true" editMode="cell" >
+
+                        <f:facet name="header">
+                            Users
+                        </f:facet> 
+                        <p:ajax event="cellEdit" listener="#{adminBean.onCellEdit}"  />
+
+                        <p:column headerText="Username">
+                            <h:outputText value="#{u.username}" />
+                        </p:column>
+
+                        <p:column headerText="Password">
+                            <h:outputText value="#{u.password}" />
+                        </p:column>
+
+                        <p:column headerText="Name">
+                            <h:outputText value="#{u.name}" />
+                        </p:column>
+
+                        <p:column headerText="Surname">
+                            <h:outputText value="#{u.surname}" />
+                        </p:column>
+
+                        <p:column headerText="Gender">
+                            <h:outputText value="#{u.gender}" />
+                        </p:column>
+
+                        <p:column headerText="Email">
+                            <h:outputText value="#{u.email}" />
+                        </p:column>
+
+                        <p:column headerText="Type">
+                            <h:outputText value="#{u.type}" />
+                        </p:column>
+
+                        <p:column headerText="Email">
+                            <h:outputText value="#{u.email}" />
+                        </p:column>
+
+                        <p:column headerText="Approved">
+                            <p:cellEditor>
+                                <f:facet name="output"><h:outputText value="#{u.approved}" /></f:facet>
+                                <f:facet name="input"><p:inputText  value="#{u.approved}"/></f:facet>
+                            </p:cellEditor>
+                        </p:column>
+
+
+
+
+
+                    </p:dataTable>
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

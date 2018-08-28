@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="title">
+                Pilot 
+            </ui:define>
+
+            <ui:define name="left">
+                <h:form>
+                    <p:menu>
+
+                        <p:menuitem value="My flights" url="pilot.xhtml"/>
+                        <p:menuitem value="Change company" url="change_company.xhtml"/>
+                        <p:menuitem value="Log out"  action="#{controler.LogOut()}" />
+
+                    </p:menu>
+                </h:form>
+            </ui:define>
+
+
+
+            <ui:define name="content">
+                <h:form>
+                    <span style="color:red">#{pilotBean.poruka}</span>
+                    <h:panelGrid columns="2">
+                        Km to go: <h:inputText value="#{pilotBean.km}"/>
+                        Average speed(km/h):<h:inputText value="#{pilotBean.speed}"/>
+                        <h:commandButton value="Update expected time" action="#{pilotBean.updateTime()}"/>
+                    </h:panelGrid>
+                    <br/>
+                    <h:panelGrid columns="2">
+                        Status:
+                        <h:selectOneMenu value="#{pilotBean.newstatus}">
+                            <f:selectItem itemLabel="ready" itemValue="ready" />
+                            <f:selectItem itemLabel="preparing for takeoff" itemValue="preparing for takeoff" />
+                            <f:selectItem itemLabel="in airspace" itemValue="in airspace" />
+                            <f:selectItem itemLabel="preparing for landing" itemValue="preparing for landing" />
+                            <f:selectItem itemLabel="landed" itemValue="landed" />
+                            <f:selectItem itemLabel="emergency landing" itemValue="emergency landing" />
+                        </h:selectOneMenu>
+                        <h:commandButton value="Update status" action="#{pilotBean.updateStatus()}"/>
+
+                    </h:panelGrid>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+
+
+
+
+    </body>
+</html>

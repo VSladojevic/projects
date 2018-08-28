@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="title">
+                Administrator
+            </ui:define>
+
+            <ui:define name="left">
+                <h:form>
+                    <p:menu>
+
+                        <p:menuitem value="Approve users" url="admin.xhtml"/>
+                        <p:menuitem value="Edit companies" url="edit_companies.xhtml"/>
+                        <p:menuitem value="Pilot licenses" url="admin_license.xhtml"/>
+                        <p:menuitem value="Add airport" url="add_airport.xhtml"/>
+                        <p:menuitem value="New flight" url="admin_flight.xhtml"/>
+                        <p:menuitem value="New airplane" url="admin_airplane.xhtml"/>
+                        <p:menuitem value="Log out"  action="#{controler.LogOut()}" />
+
+                    </p:menu>
+                </h:form>
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form> 
+                    <h:panelGrid columns="2">
+                        <p:outputLabel for="pilot">Pilot:</p:outputLabel>
+                        <h:selectOneMenu id="pilot"  value="#{adminFlight.pilotId}">
+                            <f:selectItems value="#{adminFlight.pilots}" var="p" itemValue="#{p.id}" itemLabel="#{p.name}" />
+                        </h:selectOneMenu>
+                    </h:panelGrid>
+                    <br/>
+                    <h:panelGrid  columns="2">
+                        <p:outputLabel>Co-pilot:</p:outputLabel>
+                        <h:selectOneMenu id="copilot" value="#{adminFlight.copilotId}">
+                            <f:selectItems value="#{adminFlight.pilots}" var="cp" itemValue="#{cp.id}" itemLabel="#{cp.name}" />
+                        </h:selectOneMenu>
+                    </h:panelGrid>
+                    <br/>
+
+                    <h:panelGrid  columns="2">
+                        <p:outputLabel>Steward 1:</p:outputLabel>
+                        <h:selectOneMenu  value="#{adminFlight.s1}">
+                            <f:selectItem itemLabel="None" itemValue="0" />
+                            <f:selectItems value="#{adminFlight.stewards}" var="s1" itemValue="#{s1.id}" itemLabel="#{s1.name}" />
+                        </h:selectOneMenu>
+                    </h:panelGrid>
+                    <br/>
+                    <h:panelGrid  columns="2">
+                        <p:outputLabel>Steward 2:</p:outputLabel>
+                        <h:selectOneMenu  value="#{adminFlight.s2}">
+                            
+                            <f:selectItem itemLabel="None" itemValue="0" />
+                            <f:selectItems value="#{adminFlight.stewards}" var="s2" itemValue="#{s2.id}" itemLabel="#{s2.name}" />
+                        </h:selectOneMenu>
+                    </h:panelGrid>
+                    <br/>
+                    <h:panelGrid  columns="2">
+                        <p:outputLabel>Steward 3:</p:outputLabel>
+                        <h:selectOneMenu  value="#{adminFlight.s3}">
+                            
+                            <f:selectItem itemLabel="None" itemValue="0" />
+                            <f:selectItems value="#{adminFlight.stewards}" var="s3" itemValue="#{s3.id}" itemLabel="#{s3.name}" />
+                        </h:selectOneMenu>
+                    </h:panelGrid>
+                    <br/>
+                    <h:panelGrid  columns="2">
+                        <p:outputLabel>Steward 4:</p:outputLabel>
+                        <h:selectOneMenu  value="#{adminFlight.s4}">
+                            
+                            <f:selectItem itemLabel="None" itemValue="0" />
+                            <f:selectItems value="#{adminFlight.stewards}" var="s4" itemValue="#{s4.id}" itemLabel="#{s4.name}" />
+                        </h:selectOneMenu>
+                    </h:panelGrid>
+                    <br/>
+                    <h:panelGrid  columns="2">
+                        <p:outputLabel>Steward 5:</p:outputLabel>
+                        <h:selectOneMenu  value="#{adminFlight.s5}">
+                            
+                            <f:selectItem itemLabel="None" itemValue="0" />
+                            <f:selectItems value="#{adminFlight.stewards}" var="s5" itemValue="#{s5.id}" itemLabel="#{s5.name}" />
+                        </h:selectOneMenu>
+                    </h:panelGrid>
+                    <br/>
+                    <h:commandButton value="Add staff" action="#{adminFlight.addStaff()}"/>
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

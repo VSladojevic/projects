@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="title">
+                Administrator
+            </ui:define>
+
+            <ui:define name="left">
+                <h:form>
+                    <p:menu>
+
+
+                        <p:menuitem value="Approve users" url="admin.xhtml"/>
+                        <p:menuitem value="Edit companies" url="edit_companies.xhtml"/>
+                        <p:menuitem value="Pilot licenses" url="admin_license.xhtml"/>
+                        <p:menuitem value="Add airport" url="add_airport.xhtml"/>
+                        <p:menuitem value="New flight" url="admin_flight.xhtml"/>
+                        <p:menuitem value="New airplane" url="admin_airplane.xhtml"/>
+                        <p:menuitem value="Log out"  action="#{controler.LogOut()}" />
+
+                    </p:menu>
+                </h:form>
+            </ui:define>
+
+            <ui:define name="content">
+                Add terminals
+                <h:form>
+                    <c:forEach var = "i" begin = "1" end = "#{adminAirports.aero.br_terminala}">
+                        Terminal <h:outputText value = "${i}"/> name: 
+                    </c:forEach>
+
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

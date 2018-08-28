@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="title">
+                Administrator
+            </ui:define>
+
+            <ui:define name="left">
+                <h:form>
+                    <p:menu>
+
+                        <p:menuitem value="Approve users" url="admin.xhtml"/>
+                        <p:menuitem value="Edit companies" url="edit_companies.xhtml"/>
+                        <p:menuitem value="Pilot licenses" url="admin_license.xhtml"/>
+                        <p:menuitem value="Add airport" url="add_airport.xhtml"/>
+                        <p:menuitem value="New flight" url="admin_flight.xhtml"/>
+                        <p:menuitem value="New airplane" url="admin_airplane.xhtml"/>
+                        <p:menuitem value="Log out"  action="#{controler.LogOut()}" />
+
+                    </p:menu>
+                </h:form>
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form>      
+                    <h:panelGrid columns="2">
+                        <h:panelGrid columns="2">
+                            <p:outputLabel>Departing airport:</p:outputLabel>
+                            <h:selectOneMenu onselect="#{adminFlight.loadDepGates()}" value="#{adminFlight.depIata}">
+
+                                <p:ajax event="change" update="@form"
+                                        listener="#{adminFlight.loadDepGates()}" />
+                                <f:selectItems value="#{adminFlight.airports}" var="d" itemValue="#{d.iata}" itemLabel="#{d.city}(#{d.iata})" />
+                            </h:selectOneMenu>
+                        </h:panelGrid>
+
+                        <h:panelGrid columns="2">
+                            <p:outputLabel>Departing gate:</p:outputLabel>
+                            <h:selectOneMenu  value="#{adminFlight.depGateId}">
+                                <f:selectItems value="#{adminFlight.depGates}" var="dg" itemValue="#{dg.id}" itemLabel="#{dg.name}" />
+                            </h:selectOneMenu>
+                        </h:panelGrid>
+
+                    </h:panelGrid>
+
+                    <h:panelGrid columns="2">
+                        <h:panelGrid columns="2">
+                            <p:outputLabel>Arriving airport:</p:outputLabel>
+                            <h:selectOneMenu onselect="#{adminFlight.loadArrGates()}" value="#{adminFlight.arrIata}">
+
+                                <p:ajax event="change" update="@form"
+                                        listener="#{adminFlight.loadArrGates()}" />
+                                <f:selectItems value="#{adminFlight.airports}" var="a" itemValue="#{a.iata}" itemLabel="#{a.city}(#{a.iata})" />
+                            </h:selectOneMenu>
+                        </h:panelGrid>
+
+                        <h:panelGrid columns="2">
+                            <p:outputLabel>Arriving gate:</p:outputLabel>
+                            <h:selectOneMenu  value="#{adminFlight.arrGateId}">
+                                <f:selectItems value="#{adminFlight.arrGates}" var="ag" itemValue="#{ag.id}" itemLabel="#{ag.name}" />
+                            </h:selectOneMenu>
+                        </h:panelGrid>
+
+                    </h:panelGrid>
+                    <br/>
+
+                    <h:panelGrid columns="2">
+                        <p:outputLabel>Company (flight owner):</p:outputLabel>
+                        <h:selectOneMenu  value="#{adminFlight.companyId}">
+                            <f:selectItems value="#{adminFlight.companies}" var="comp" itemValue="#{comp.id}" itemLabel="#{comp.name} (#{comp.country})" />
+                        </h:selectOneMenu>
+
+                        <p:outputLabel  value="Departure time:" />
+                        <p:calendar  value="#{adminFlight.departure}" pattern="MM/dd/yyyy HH:mm:ss"/>
+
+                        <p:outputLabel  value="Flight duration:" />
+                        <p:calendar  value="#{adminFlight.duration}" pattern="HH:mm" timeOnly="true"  />
+
+
+
+                    </h:panelGrid>
+                    <br/>
+
+
+                    <h:panelGrid columns="2">
+                        <p:outputLabel>Airplane:</p:outputLabel>
+                        <h:selectOneMenu  value="#{adminFlight.planeId}">
+                            <f:selectItems value="#{adminFlight.airplanes}" var="airplane" itemValue="#{airplane.id}" itemLabel="#{adminFlight.plane_models[adminFlight.airplanes.indexOf(airplane)].type}" />
+                        </h:selectOneMenu>
+                        <h:outputText value="Charter: " />
+                        <p:selectBooleanCheckbox value="#{adminFlight.charter}" />
+                    </h:panelGrid>
+
+                    <h:commandButton value="Next (add staff)" action="#{adminFlight.step2()}"/>
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

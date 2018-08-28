@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="title">
+                Flight details
+            </ui:define>
+
+            <ui:define name="left">
+               <h:form>
+                    <p:menu>
+
+                        <p:menuitem value="Flights" url="worker.xhtml"/>
+                        <p:menuitem value="Add new airplane" url="add_airplane.xhtml"/>
+                        <p:menuitem value="Rent an airplane" url="rent_airplane.xhtml"/>
+                        <p:menuitem value="See renting offers" url="rent_offers.xhtml"/>
+                        <p:menuitem value="Log out"  action="#{controler.LogOut()}" />
+                    </p:menu>
+                </h:form>
+            </ui:define>
+
+            <ui:define name="content">
+                <p:layout>
+                    <p:layoutUnit position="west" resizable="true" size="350">
+                        <p:panelGrid columns="2">
+
+                            <h:outputText value="From:" />
+                            <h:outputText value="#{workerBean.selected_flight.dep.city} (#{workerBean.selected_flight.dep.country})" />
+
+                            <h:outputText value="" />
+                            <h:outputText value="#{workerBean.selected_flight.dep.naziv} (#{workerBean.selected_flight.dep.iata})" />
+
+                            <h:outputText value="To:" />
+                            <h:outputText value="#{workerBean.selected_flight.arr.city} (#{workerBean.selected_flight.arr.country})" />
+
+                            <h:outputText value="" />
+                            <h:outputText value="#{workerBean.selected_flight.arr.naziv} (#{workerBean.selected_flight.arr.iata})" />
+
+
+                            <h:outputText value="Departure time:" />
+                            <h:outputText value="#{workerBean.selected_flight.basic.takeoff_time}" />
+
+                            <h:outputText value="Planed arrival:" />
+                            <h:outputText value="#{workerBean.selected_flight.basic.planned_arrival}" />
+
+                            <h:outputText value="Reserved seats:" />
+                            <h:outputText value="#{workerBean.selected_flight.basic.reserved_seats}" />
+
+
+                            <h:outputText value="Plane capacity:" />
+                            <h:outputText value="#{workerBean.selected_flight.plane.capacity}" />
+
+                            <h:outputText value="Radar centres:" />
+                            <h:outputText value="#{workerBean.selected_flight.radars.size()}" />
+                        </p:panelGrid>
+                        <br/>
+                        <!--
+                        <div id="fb-root"></div>
+                        <script>(function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id))
+                                    return;
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = "//connect.facebook.net/en_US/sdk.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
+                        <div style="margin-left:5px">
+                            <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Flocalhost%3A8080faces%2Fworker_flight_details.xhtml&amp;layout=button_count&amp;size=small&amp;mobile_iframe=true&amp;width=69&amp;height=20&amp;appId" width="80" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        </div>
+                        -->
+
+                        <script>(function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id))
+                                    return;
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.10";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
+                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Flocalhost%3A8080%2F_airflow1%2Ffaces%2Fworker_flight_details.xhtml%3FletId%3D&amp;layout=button&amp;size=small&amp;mobile_iframe=true&amp;width=59&amp;height=20&amp;appId" 
+                                height="20" style="border:none;overflow:hidden"
+                                scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+
+
+                        <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <div>
+                            <a class="twitter-share-button"
+                               href="https://twitter.com/intent/tweet?text=Flight details&amp;url=http://localhost:8080/faces/worker_flight_details.xhtml"
+                               data-size="large">
+                                Tweet</a>
+                        </div>
+                    </p:layoutUnit>
+
+                    <p:layoutUnit position="center">
+                        <p:gmap model="#{workerBean.simpleModel}" center="#{(workerBean.selected_flight.dep.latitude + workerBean.selected_flight.arr.latitude)/2}, #{(workerBean.selected_flight.dep.longitude + workerBean.selected_flight.arr.longitude)/2}" zoom="5" type="roadmap"  style="width:100%;height:100%"/>
+
+
+                    </p:layoutUnit>
+                </p:layout>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="title">
+                Guest
+            </ui:define>
+            <ui:define name="left">
+                <h:form>
+                    <p:menu>
+
+                        <p:menuitem value="Login" url="login.xhtml"/>
+                        <p:menuitem value="Register" url="register.xhtml"/>
+                        <p:menuitem value="Change password" url="changepass.xhtml"/>
+                        <p:menuitem value="Login as guest" url="guest.xhtml"/>
+                        <p:menuitem value="Home" url="index.xhtml"/>
+                        <p:menuitem value="Log out"  action="#{controler.LogOut()}" />
+                    </p:menu>
+                </h:form>
+            </ui:define>
+
+            <ui:define name="content">
+
+                Search flights:
+                <h:form>
+
+                    <p:selectOneRadio id="direction" value="#{guestControler.povratna}">
+                        <f:selectItem itemLabel="One-way" itemValue="false" />
+                        <f:selectItem itemLabel="Return" itemValue="true" />
+                        <p:ajax process="polazak povratak direction from to odrasli dir"  update="@form" />
+                    </p:selectOneRadio>
+                    <h:panelGrid columns="2" >  
+                        From:<p:autoComplete id="from" minQueryLength="0" value="#{guestControler.from}" completeMethod="#{guestControler.fromComplete}" />
+                        To:<p:autoComplete id="to" minQueryLength="0" value="#{guestControler.to}" completeMethod="#{guestControler.fromComplete}" />
+
+                    </h:panelGrid>
+                    <p:outputLabel value="Departure: " />
+                    <p:calendar id="polazak" value="#{guestControler.departure}" mindate="#{guestControler.today}">
+                        <p:ajax process="direction povratak polazak from to odrasli dir" event="dateSelect" update="@form" />
+
+                    </p:calendar>
+                    <p:outputLabel  rendered="#{guestControler.povratna}" value="Return: "/>
+                    <p:calendar  id="povratak" rendered="#{guestControler.povratna}" value="#{guestControler.back}"  mindate="#{guestControler.departure}">
+
+                    </p:calendar>
+                    <h:panelGrid columns="2" >
+                        <p:outputLabel value="Adults" />
+                        <p:selectOneMenu id="odrasli" value="#{guestControler.adults}" >
+                            <f:selectItem itemLabel="1" itemValue="1" />
+                            <f:selectItem itemLabel="2" itemValue="2" />
+                            <f:selectItem itemLabel="3" itemValue="3" />
+                            <f:selectItem itemLabel="4" itemValue="4" />
+                            <f:selectItem itemLabel="5" itemValue="5" />
+                            <f:selectItem itemLabel="6" itemValue="6" />
+                            <f:selectItem itemLabel="7" itemValue="7" />
+                            <f:selectItem itemLabel="8" itemValue="8" />
+                        </p:selectOneMenu>
+
+                        <h:outputText value="Direct flight: " />
+                        <p:selectBooleanCheckbox id="dir" value="#{guestControler.direktan}" />
+                    </h:panelGrid>
+                    <br/>
+                    <h:commandButton value="Search flights" action="#{guestControler.search()}"/>
+                </h:form>
+                <span style="color:green">#{guestControler.poruka}</span>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

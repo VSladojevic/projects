@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="title">
+                Results
+            </ui:define>
+
+
+            <ui:define name="left">
+                <h:form>
+                    <p:menu>
+
+                        <p:menuitem value="Login" url="faces/login.xhtml"/>
+                        <p:menuitem value="Register" url="faces/register.xhtml"/>
+                        <p:menuitem value="Change password" url="faces/changepass.xhtml"/>
+                        <p:menuitem value="Login as guest" url="faces/guest.xhtml"/>
+                        <p:menuitem value="Home" url="faces/index.xhtml"/>
+                        <p:menuitem value="Log out"  action="#{controler.LogOut()}" />
+                    </p:menu>
+                </h:form>
+            </ui:define>
+            <ui:define name="content">
+
+                <h:form>
+                    <p:dataTable  var="res" value="#{guestControler.results}">
+
+                        <f:facet name="header">
+                            Results
+                        </f:facet>
+                        
+                        <p:column headerText="From">
+                            <h:outputText value="#{res.f1.dep.city} (#{res.f1.dep.iata})"/>
+                        </p:column>
+                        
+                        <p:column headerText="To">
+                            <h:outputText value="#{res.f1.arr.city} (#{res.f1.arr.iata})"/>
+                        </p:column>
+                        <p:column headerText="Stops" >
+                            <h:outputText value="1" />
+                        </p:column>
+                        <p:column headerText="Duration" >
+                            <h:outputText value="#{res.f1.basic.duration}" />
+                        </p:column>
+
+
+                        <p:column headerText="">
+                            <h:commandButton value="Reserve" />
+                        </p:column>
+
+                    </p:dataTable>
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <body>
+
+        <ui:composition template="./template.xhtml">
+
+            <ui:define name="title">
+                Pilot license 
+            </ui:define>
+
+            <ui:define name="left">
+                <h:form>
+                    <p:menu>
+                        <p:menuitem value="My flights"/>
+                        <p:menuitem value="Change company" url="change_company.xhtml"/>
+                        <p:menuitem value="Log out"  action="#{controler.LogOut()}" />
+
+
+                    </p:menu>
+                </h:form>
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form>
+                    <h:panelGrid columns="1">
+                        <p:outputLabel for="license" value="Enter your license" />
+                        <p:inputMask id="license" value="#{pilotBean.license}" mask="aa9999999"/>
+                        <h:commandButton value="Submit" action="#{pilotBean.addLicense()}"/>
+
+                    </h:panelGrid>
+
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
