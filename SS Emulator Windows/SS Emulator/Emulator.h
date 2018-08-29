@@ -1,4 +1,5 @@
 #pragma once
+// ne moraju pragme
 #include <string>
 #include <vector>
 #include <sstream>
@@ -7,6 +8,11 @@
 #include <ctime>
 #include <thread>
 #include <conio.h>
+// za linux
+// bez conio
+// #include <termios.h> // ne treba, nije korisceno
+// #include <pthread.h>
+// #include <ncurses.h>
 
 using namespace std;
 

@@ -19,9 +19,13 @@ void raiseError(string message){
 
 void trim(string& line) {
 	int firstIndex = line.find_first_not_of(" \t");
+	// za linux 
+	// int firstIndex = line.find_first_not_of(" \t\r");
 	if (firstIndex > -1) {
 		line = line.substr(firstIndex);
 		int lastIndex = line.find_last_not_of(" \t");
+		// za linux 
+		// int firstIndex = line.find_first_not_of(" \t\r");
 		line = line.substr(0, lastIndex + 1);
 	}
 	else {

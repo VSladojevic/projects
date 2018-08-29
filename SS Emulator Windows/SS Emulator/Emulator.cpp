@@ -108,6 +108,37 @@ void Emulator::storeResult() {
 
 void Emulator::emulate() {
 	
+	/*
+	static struct termios oldt, newt;
+	tcgetattr( STDIN_FILENO, &oldt);
+	newt = oldt;
+	newt.c_lflag &= ~(ICANON | ECHO);
+	tcsetattr( STDIN_FILENO, TCSANOW, &newt);
+	*/
+	
+	/*
+	initscr();
+	scrollok(stdscr,TRUE);
+	//keypad(stdscr,TRUE);
+	//idlok(stdscr,TRUE);
+	nodelay(stdscr, TRUE);
+  	noecho();
+	
+	pthread_t thread1;
+	const char *message1 = "Thread 1";
+	pthread_create( &thread1, NULL, timer, (void*) message1);
+	
+	pthread_t thread2;
+	const char *message2 = "Thread 2";
+	pthread_create( &thread2, NULL, keyboard, (void*) message2);
+	
+	pthread_t thread3;
+	const char *message3 = "Thread 3";
+	pthread_create( &thread3, NULL, printListener, (void*) message3);
+	
+	*/
+
+    // za linux skloniti ove threadove ispod, ubaciti ovo gore
 	thread threadTimer(timer);
 	thread threadKeyboard(keyboard);
 	thread threadPrint(printListener);
@@ -275,9 +306,24 @@ void Emulator::emulate() {
 	}
 	// end of while
 	
+	// za linux izbaciti ovo
 	threadTimer.join();
 	threadKeyboard.join();
 	threadPrint.join();
+	
+	// ubaciti ovo
+	/*
+	pthread_join( thread1, NULL);
+	pthread_join( thread2, NULL);
+	pthread_join( thread3, NULL);
+		
+	// vracanje podesavanja
+	//tcsetattr( STDIN_FILENO, TCSANOW, &oldt);
+	nodelay(stdscr, FALSE);
+
+	getch();
+	endwin();
+	*/
 	
 }
 
@@ -471,6 +517,10 @@ void Emulator::handleInterrupt() {
 void Emulator::keyboard() {
 	while (running) {
 		char key;
+		
+		// za linux
+		// key = getchar();
+		
 		key = _getch();
 		int val = key;
 
