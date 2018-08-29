@@ -1,0 +1,15 @@
+.global START, b, kraj
+.data
+a:	.char 1,2,3,4
+c:  .char 5,6,7,8
+
+.text
+	moval r1, a ;ne bi trebalo 
+	jmpal b 	;ne
+	addal r1,5  ;ne
+	
+b:  moval r1,c  
+    jmpal $kraj
+	
+.end
+

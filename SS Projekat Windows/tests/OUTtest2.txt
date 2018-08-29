@@ -1,0 +1,25 @@
+#SymbolTable
+#no              symbol             section              offset          visibility
+0                 UND           undefined                   0                   l
+1               .data                data                   0                   l
+2                   a                data                   0                   l
+3                   c                data                   4                   l
+4               .text                text                   8                   l
+5               START                text                   0                   g
+6                   b                text                  18                   l
+7                kraj                text                  24                   l
+
+
+#.data
+01 02 03 04 05 06 07 08 
+
+#.rel.text
+#offset                type                  no
+00000002            R_386_16                   1
+00000012            R_386_16                   4
+0000001a            R_386_16                   1
+00000026            R_386_16                   1
+
+#.text
+f5 30 00 00 f5 a0 54 00 f6 0d 00 02 f5 90 00 02 f5 e0 18 00 c1 20 05 00 f5 30 04 00 c1 e0 04 00 c1 20 05 00 e4 10 04 00 c1 e0 d4 ff 
+

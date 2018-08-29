@@ -1,0 +1,25 @@
+.global START
+.data
+	.long b, START
+b:
+	.align 16
+	.char START
+.text
+START:
+	moval r0, 20
+	moval r1, 40
+	subal r1, r0
+	jmpne $b 
+
+continue:
+	addal r1, 30
+	pushal r1
+	cmpeq r1, r0 
+	addeq r1, b
+	testal r1, 2
+	jmpeq continue
+
+kraj:
+	retal
+.end
+

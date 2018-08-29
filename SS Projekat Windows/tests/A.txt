@@ -1,0 +1,28 @@
+.global START, b, kraj, keyboardInterrupt, timerInterrupt
+.data
+a:	.char 1,2,3,4
+c:  .char 5,6,7,8
+
+.text
+START:
+	moval r1, a
+	jmpal b
+	
+	addal r1,5 ;nece ovo, skocice na drugi fajl
+	addal r1,5 ; ni ovo
+	
+timerInterrupt:
+	moval r5, 84
+	moval *0x0FFE, r5
+	iretal
+	
+keyboardInterrupt:
+	moval r4, *0x0FFC ; cita ulazni registar periferije
+	moval *0x0FFE, r4 ; upisuje u izlazni 
+	iretal
+	
+	
+kraj: testal r6,1 ;ovde treba da se vrati
+	jmpal START
+.end
+

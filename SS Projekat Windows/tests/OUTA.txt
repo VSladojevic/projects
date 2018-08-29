@@ -1,0 +1,27 @@
+#SymbolTable
+#no              symbol             section              offset          visibility
+0                 UND           undefined                  32                   l
+1               .data                data                  32                   l
+2                   a                data                   0                   l
+3                   c                data                   4                   l
+4               .text                text                  3a                   l
+5               START                text                   0                   g
+6      timerInterrupt                text                  10                   g
+7   keyboardInterrupt                text                  1a                   g
+8                kraj                text                  24                   g
+9                   b           undefined                   0                   g
+
+
+
+#.data
+01 02 03 04 05 06 07 08 
+
+#.rel.text
+#offset                type                  no
+00000002            R_386_16                   1
+00000006            R_386_16                   9
+0000002a            R_386_16                   4
+
+#.text
+f5 30 00 00 f5 e0 00 00 c1 20 05 00 c1 20 05 00 f5 a0 54 00 f6 0d fe 0f f0 00 f5 90 fc 0f f6 0c fe 0f f0 00 e1 c0 01 00 f5 e0 00 00 
+
