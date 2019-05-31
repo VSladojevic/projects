@@ -5,4 +5,4 @@ Personal repo for university and other projects
 
 ## OS2
 
-## [FPL Ranac](FPL Ranac/)
+## [FPL Ranac](https://github.com/VSladojevic/projects/tree/master/Bubble2019)
