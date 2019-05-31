@@ -1,0 +1,4 @@
+﻿  Input.cpp
+c:\users\slado\source\repos\bubble2019\input\input\input.cpp(36): warning C4018: '<': signed/unsigned mismatch
+c:\users\slado\source\repos\bubble2019\input\input\input.cpp(102): warning C4018: '<': signed/unsigned mismatch
+  Input.vcxproj -> C:\Users\slado\source\repos\Bubble2019\Input\Debug\Input.exe

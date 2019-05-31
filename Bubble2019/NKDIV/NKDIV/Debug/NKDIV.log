@@ -1,0 +1,8 @@
+﻿  NKDIV.cpp
+c:\users\slado\source\repos\bubble2019\nkdiv\nkdiv\nkdiv.cpp(54): warning C4018: '<=': signed/unsigned mismatch
+c:\users\slado\source\repos\bubble2019\nkdiv\nkdiv\nkdiv.cpp(64): warning C4018: '<': signed/unsigned mismatch
+c:\users\slado\source\repos\bubble2019\nkdiv\nkdiv\nkdiv.cpp(81): warning C4018: '<': signed/unsigned mismatch
+c:\users\slado\source\repos\bubble2019\nkdiv\nkdiv\nkdiv.cpp(90): warning C4018: '<': signed/unsigned mismatch
+c:\users\slado\source\repos\bubble2019\nkdiv\nkdiv\nkdiv.cpp(115): warning C4018: '<': signed/unsigned mismatch
+c:\users\slado\source\repos\bubble2019\nkdiv\nkdiv\nkdiv.cpp(133): warning C4018: '<': signed/unsigned mismatch
+  NKDIV.vcxproj -> C:\Users\slado\source\repos\Bubble2019\NKDIV\Debug\NKDIV.exe

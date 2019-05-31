@@ -1,0 +1,4 @@
+﻿  Rational numbers.cpp
+c:\users\slado\source\repos\bubble2019\rational numbers\rational numbers\rational numbers.cpp(42): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\slado\source\repos\bubble2019\rational numbers\rational numbers\rational numbers.cpp(72): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Rational numbers.vcxproj -> C:\Users\slado\source\repos\Bubble2019\Rational numbers\Debug\Rational numbers.exe

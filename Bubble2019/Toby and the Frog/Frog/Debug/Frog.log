@@ -1,0 +1,3 @@
+﻿  Frog.cpp
+c:\users\slado\source\repos\frog\frog\frog.cpp(8): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Frog.vcxproj -> C:\Users\slado\source\repos\Frog\Debug\Frog.exe
