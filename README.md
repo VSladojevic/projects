@@ -19,7 +19,7 @@ switching, event handling and semaphores, a project done in C++ for Operating Sy
 ## [OS2](https://github.com/VSladojevic/projects/tree/master/OS2%20sv140048d)
 Memory Allocator project for Operating Systems 2 course done in C++.
 The allocator uses slabs and buddy system for memory management.\
-[_Jan 2017, 5<sup>th</sup> semester_]
+[_Aug 2017, 5<sup>th</sup> semester_]
 ## [SS Emulator](https://github.com/VSladojevic/projects/tree/master/SS%20Emulator%20Windows)
 Emulator part of the end project for System Software course.
 Two-pass assembler which generates relocatable object file for a given assembly code as input.
